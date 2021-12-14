@@ -30,6 +30,9 @@
         width: 80%;
         margin: auto;
       }
+      #leftNav{
+        display: flex;
+      }
       #leftNav > img {
         margin-right: 20px;
       }
@@ -43,25 +46,12 @@
         color: white;
         text-decoration: none;
       }
-      select {
-        border-color: transparent;
-        background-color: transparent;
-        color: white;
-        border: none;
-      }
-      select > option {
-        color: black;
-        font-size: 20px;
-        margin: 20px 20px;
-      }
-      select > option:hover {
-        color: blue;
-        background-color: white;
-      }
+      
       #fromTo {
         background-image: url(https://forever.travel-assets.com/flex/flexmanager/images/2021/06/25/TVLY_SeizeYourSomeday_lpheroB_1680x945_20210623.jpg?impolicy=fcrop&w=1680&h=485&q=medium);
         background-size: cover;
         height: 480px;
+        position: relative;
       }
       #guarantees {
         width: 80%;
@@ -79,6 +69,7 @@
         border-radius: 10px;
         padding: 0px 0px;
         background-color: white;
+        
       }
       .gcards > div:first-child {
         height: 75%;
@@ -86,21 +77,24 @@
         margin: 0px 0px;
         margin-top: -20px;
         border: transparent;
+        position: relative;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+        box-shadow: inset 0px -30px 30px rgb(51, 51, 51);
       }
 
       .gcards > div:first-child > h3 {
-        position: relative;
-        bottom: -150px;
+        position: absolute;
+        bottom: 5px;
+        left: 10px;
         color: white;
         opacity: 1;
         text-shadow: 10px 10px 10px black;
       }
       .gcards p {
-        margin: 0px 10px;
+        margin: 20px 10px;
         color: grey;
-        line-height: 15px;
+        line-height: 16px;
       }
       #deals {
         width: 80%;
@@ -117,24 +111,20 @@
         border-radius: 10px;
         padding: 0px 0px;
         background-color: white;
+        box-shadow: inset 60px -20px 150px rgb(51, 51, 51);
+        position: relative;
       }
-      .bgOp{
-        width: 100%;
-        height: 100%;
-        color: white;
-        text-shadow: 20px 20px 20px black;
-        background-color: rgb(100, 100, 100, 0.3);
-        border-radius: 10px;
-        box-shadow: inset 0px -50px 60px rgb(51, 51, 51);
-      }
+
       h2 {
         margin: 0px;
       }
       .dealCardText {
         width: 50%;
-        position: relative;
-        bottom: -70px;
         margin-left: 30px;
+        color: white; 
+        position: absolute;
+          top: 25%;
+          left: 10px;
       }
       .dealCardText>button{
           color: rgb(13,90,185);
@@ -165,10 +155,14 @@
       }
       .plansCards{
           border-radius: 10px;
+          color: white;
+          position: relative;
+          box-shadow: inset 0px -50px 60px rgb(51, 51, 51);
       }
       .plansCards h2{
-          position: relative;
-          bottom: -180px;
+          position: absolute;
+          bottom: 10px;
+          left: 10px;
       }
 
       /* offers */
@@ -182,6 +176,8 @@
         height: 80%;
         position: relative;
         border-radius: 10px;
+        color: white;
+        box-shadow: inset 40px -30px 100px rgb(51, 51, 51);
       }
       #offerbg h3{
           position: absolute;
@@ -233,6 +229,114 @@
           margin-top: 15px;
           color: #1F3366;
       }
+      #dropDown{
+        position: relative;
+      }
+      #dropMenu{
+        position: absolute;
+        z-index: 10;
+        visibility: hidden;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        border-radius: 40px;
+        box-shadow: 5px 5px 20px #0a438b;
+      }
+      #dropDown>button{
+        width: 100px;
+        margin: 10px 0px;
+        background-color: transparent;
+        color: white;
+        border: none;
+      }
+      .anchor{
+        width: 250px;
+        padding: 10px 20px;
+      }
+      .anchor>a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+        display: block;
+      }
+      .anchor>a:hover{
+        text-decoration: none;
+        color: white;
+        background-color: #0a438b;
+        font-size: 20px;
+        font-weight: 600;
+      }
+      #centralPanel{
+        width: 80%;
+        margin: auto;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        height: 350px;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 5px 5px 50px grey;
+      }
+      #searchNav{
+        margin: auto;
+        text-align: center;
+      }
+      #searchNav>button{
+        color: grey;
+        padding: 10px 20px;
+        font-size: 20px;
+        text-decoration: none;
+        background-color: transparent;
+        border: none;
+      }
+      #searchNav>button:hover{
+        color: white;
+        background-color: #0a438b;
+        border-radius: 30px;
+      }
+      #searchNav>button:active{
+        color: white;
+        background-color: #496d99;
+        font-size: 15px;
+        border-radius: 30px;
+      }
+      #searchPanel input{
+        margin: 10px auto;
+        padding: 5px;
+        border: 1px solid grey;
+        border-radius: 20px;
+      }
+      #searchPanel input:active{
+        border: 5px solid #0a438b;
+      }
+      #searchPanel button{
+        border-radius: 20px;
+        border: none;
+        background-color: #0a438b;
+        color: white;
+        padding: 10px 20px;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      #searchPanel button:active{
+        background-color: #405e83;
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+      }
+      #searchPanel h1{
+        color: #1F3366;
+      }
+
+      #flightForm{
+        display: none;
+      }
+      #stayForm{
+        display: block;
+      }
+
+      
     </style>
   </head>
   <body>
@@ -243,20 +347,21 @@
             src="https://www.travelocity.com/_dms/header/logo.svg?locale=en_US&amp;siteid=80001&amp;2"
             alt="travelocity"
           />
-          <select>
-            <option>More travel</option>
-            <option value="">Packages</option>
-            <option value="">Stays</option>
-            <option value="">Cars</option>
-            <option value="">Flights</option>
-            <option value="">Cruises</option>
-            <option value="">Things to do</option>
-            <option value="">Tips for me</option>
-            <option value="">Discover</option>
-            <option value="">Travel Deals</option>
-            <option value="">Get Inspired</option>
-            <option value="">Groups & meetings</option>
-          </select>
+          <div id="dropDown">
+            <button onclick="dropMenu()"><p>More Travel</p></button>
+            <div id="dropMenu">
+              <div class="anchor"><a href="">Packages</a></div>
+              <div class="anchor"><a href="">Stays</a></div>
+              <div class="anchor"><a href="">Cars</a></div>
+              <div class="anchor"><a href="">Flights</a></div>
+              <div class="anchor"><a href="">Cruises</a></div>
+              <div class="anchor"><a href="">Things to do</a></div>
+              <div class="anchor"><a href="">Tips for me</a></div>
+              <div class="anchor"><a href="">Discover</a></div>
+              <div class="anchor"><a href="">Travel Deals</a></div>
+            </div>
+          </div>
+          <div onclick="dropMenu()"><span class="material-icons" style="color: white; margin-top: 20px;">expand_more</span></div>
         </div>
         <div id="rightNav">
           <a href="#">Espanol</a>
@@ -269,8 +374,42 @@
     </header>
 
     <!-- Top Div -->
-    <section id="fromTo"></section>
+    <section id="fromTo">
+      <div id="centralPanel">
+        <div id="searchNav">
+          <button id="flBtn" onclick="flForm()">Flights</button>
+          <button id="stBtn" onclick="stForm()">Stays</button>
+          <button>Packages</button>
+          <button>Things to do</button>
+        </div>
+        <hr>
+        <div id="searchPanel">
+          <div id="stayForm" style="text-align: center;">
+            <h1>Stays</h1>
+            <form action="">
+              <input type="text" placeholder="Enter your destination city"><br>
+              <input type="date"><br>
+              <input type="date"><br>
+              <input type="number" placeholder="Enter no. of rooms"><br>
+              <button>Search</button>
+            </form> 
+          </div>
+          <div id="flightForm" style="text-align: center;">
+            <h1>Flights</h1>
+            <form action="">
+              <input type="text" placeholder="Leaving from"><br>
+              <input type="text" placeholder="Arriving at"><br>
+              <input type="date"><br>
+              <button>Search</button>
+            </form> 
+          </div>
+        </div>
+        
+      </div>
 
+
+    </section>
+    
     <!-- Guarantees Section -->
     <section id="guarantees">
       <div class="gcards">
@@ -381,7 +520,7 @@
     <section id="offers">
         <h1>Featured offers</h1>
         <div id="offerbg" style="background :url(https://forever.travel-assets.com/flex/flexmanager/images/2021/11/08/TVLY_Storefront_Family_imgB_1200x674_20211104.jpg); background-size: cover; background-position: center;">
-            <div class="bgOp" style="">
+            <div class="bgOp">
                 <h3>Family vacation deals</h3>
                 <p>Seize your next unforgettable family vacation</p>
             </div>
@@ -428,3 +567,24 @@
     </section>
   </body>
 </html>
+<script>
+  var count=0;
+  function dropMenu(){
+    if(count==0){
+      document.getElementById('dropMenu').style.visibility = 'visible';
+      count=1;
+    }
+    else if(count==1){
+      document.getElementById('dropMenu').style.visibility = 'hidden';
+      count = 0;
+    }  
+  }
+  function flForm(){
+    document.getElementById('flightForm').style.display = 'block';
+    document.getElementById('stayForm').style.display = 'none';
+  }
+  function stForm(){
+    document.getElementById('flightForm').style.display = 'none';
+    document.getElementById('stayForm').style.display = 'block';
+  }
+</script>
