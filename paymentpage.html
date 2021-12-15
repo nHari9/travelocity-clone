@@ -5,135 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>paymentpage</title>
-    <style>
-            body {
-        padding: 0px 0px;
-        margin: 0px;
-        font-family: sans-serif;
-        background-color: #f0f3f5;
-        font-size: 13px;
-      }
-
-      header {
-        width: 100%;
-        background-color: #0a438b;
-        height: 50px;
-        margin: 0px;
-        padding: 10px 0px;
-      }
-      nav {
-        display: flex;
-        justify-content: space-between;
-        width: 80%;
-        margin: auto;
-      }
-      #leftNav > img {
-        margin-right: 20px;
-      }
-      #rightNav {
-        display: flex;
-        padding-top: 20px;
-      }
-      #rightNav > a {
-        margin-left: 20px;
-        font-size: 15px;
-        color: white;
-        text-decoration: none;
-      }
-      #rightNav > a:hover{
-          text-decoration: underline;
-      }
-        p{
-            margin: 10px;
-        }
-        .flightdetails{
-            background-color: white;
-            width: 35%;
-            height: 400px;
-            margin-left: 65%;
-        }
-        .paymentpage{
-            background-color: #f0f3f5;
-        }
-        .paymentpage h2{
-           color: #202843;
-           margin: 20px;
-        }
-
-        .paymentpage>h2{
-            margin-left: 150px;
-        }
-        /* hr{
-            width: 0%;
-            margin-left: 0px;
-        } */
-        .signin{
-            background-color: white;
-            width: 50%;
-            height: 40px;
-            margin-left: 12%;
-        }
-        .whos{
-            background-color: white;
-            width: 50%;
-            margin-left: 12%;
-        }
-        .details{
-            display: flex;
-            /* grid-template-columns: repeat(4,1fr);
-            justify-content: space-between; */
-            text-align: center;
-            
-        }
-   
-        select{
-            border-radius: 5px;
-            height: 30px;
-            margin: 10px;
-        }
-        select:hover{
-            cursor: pointer;
-        }
-        input{
-            border-radius: 5px;
-            height: 30px;
-            margin: 10px;
-        }
-        input:hover{
-            cursor: pointer;
-        }
-        label{
-            margin: 20px;
-            color: #8caec9;
-        }
-      a{
-          font-size: 15px;
-          text-decoration: none;
-      }
-      a:hover{
-          text-decoration: underline;
-      }
-
-      .protect{
-        background-color: white;
-            width: 50%;
-            margin-left: 12%;
-      }
-      .imp{
-          border: 0.5px solid teal;
-          border-radius: 5px;
-          margin: 20px;
-      }
-
-      .how{
-        background-color: white;
-            width: 50%;
-            margin-left: 12%;
-      }
-      .how img{
-          width: 25px;
-      }
-    </style>
+    <link rel="stylesheet" href="paymentpage.css">
 </head>
 <body>
     <header>
@@ -151,7 +23,7 @@
         </nav>
       </header>
 
-      <div class="flightdetails">
+      <div class="roundtrip">
           <h2>Roundtrip</h2>
           <p>#</p>
           <hr>
@@ -169,6 +41,11 @@
 
       </div>
 
+      <div class="congo">
+          <h2> Price Guarantee</h2>
+          <p> Congratulations! You're getting the lowest possible rate. We guarantee it.</p>
+      </div>
+
     <div class="paymentpage">
         <div>
             <h2>Secure booking - only takes a few minutes!</h2>
@@ -178,11 +55,26 @@
             <a href="Sigin.html">Sign in to book faster</a>
         </div>
 
+        <div class="div1">
+            <label for="">Signed in as</label>
+            <p>user name from local storage</p>
+            <p>We'll send your confirmation here.</p>
+        </div>
+
 
         <div class="whos">
            <h2>Who's travelling?</h2>
            <p>Traveler names must match government-issued photo ID exactly.</p>
+           <div>
+            <label for="">Traveler name*</label><br>
+            <select name="" id="travelername">
+                <option value="">Sigin name</option>
+                <option value="">Add a new traveller</option>
+                <option value="">Select from my account</option> 
+            </select>
+        </div>
            <div class="details">
+              
                <div>
                    <label>Title*</label><br>
                    <select name="" id="title">
@@ -266,7 +158,7 @@
         <div class="how">
             <h2>How would you like to pay?</h2>
             <img src="https://a.travel-assets.com/dms-svg/payments/cards-cc_master_card.svg" alt="">
-            <img src="https://a.travel-assets.com/dms-svg/payments/cards-cc_visa.svg" alt="">
+            <img src="https://a.travel-assets.com/dms-svg/payments/cards-cc_visa.svg" alt=""><br>
             <label for="">Name on Card*</label><br>
             <input type="text" name="" id=""><br>
             <label for="">Debit/Credit card number*</label><br>
@@ -283,10 +175,70 @@
             <label for="">Security code*</label><br>
             <input type="number" name="" id="">
             <hr>
-
+            <label for="">Country/Territory*</label><br>
+            <select name="" id="">
+                <option value="">United States of America</option>
+                <option value="">India</option>
+            </select><br>
+            <label for="">Billing address 1*</label><br>
+            <input type="text" placeholder="(ex. 123 Main)"><br>
+            <label for="">Billing address 2</label><br>
+            <input type="text" name="" id="" placeholder="(ex. Suite 400, Apt. 4B)"><br>
+            <label for="">City*</label><br>
+            <input type="text"><br>
+            <label for="">State*</label><br>
+            <select name="" id="">
+                <option value="">select</option>
+                <option value=""></option>
+            </select><br>
+            <label for="">ZIP code*</label><br>
+            <input type="number"><br>
+            <input type="checkbox" name="" id="">
+            <p>Remember this card for future use</p>
         </div>
 
-    
+
+        <div class="review">
+            <h2>Review and book your trip</h2>
+            <ol>
+                <li>Review your trip details to make sure the dates and times are correct.</li>
+                <li>Check your spelling. Flight passenger names must match government-issued photo ID exactly.</li>
+                <li>Review the terms of your booking:
+                    
+                        <ul>
+                            <li>We understand that sometimes plans change. We do not charge a cancel or change fee. When the airline charges such fees in accordance with its own policies, the cost will be passed on to you.</li>
+                            <li>We understand that sometimes plans change. We do not charge a cancel or change fee. When the airline charges such fees in accordance with its own policies, the cost will be passed on to you.</li>
+                            <li>Please read important information regarding airline liability limitations (Opens in a new window.) .</li>
+                            <li>Prices may not include baggage fees or other fees charged directly by the airline.</li>
+                            <li>Fares are not guaranteed until ticketed.</li>
+                            <li>Federal law forbids the carriage of hazardous materials aboard aircraft in your luggage or on your person.</li>
+                        </ul>
+                </li>
+            </ol>
+
+            <p>By clicking on the button below, I acknowledge that I have reviewed the Privacy Statement Opens in a new window. and Government Travel Advice Opens in a new window. and have reviewed and accept the above Rules & Restrictions and Terms of Use Opens in a new window..</p>
+
+            <input type="button" value="Complete Booking >" id="submit">
+
+            <p>We use secure transmission and encrypted storage to protect your personal information. </p>
+            <p>This payment will be processed in the U.S. This does not apply when the travel provider (airline/hotel/rail, etc.) processes your payment.</p>
+            <h2>Unlock trip savings up to 20% off select hotels when you book this flight</h2>
+            Your discount lasts until your trip starts
+        </div>
+
     </div>
+
+    <footer class="footer">
+        <h4>[+] Tell us what you think</h4>
+        <div>
+            <p>Privacy Policy</p>
+            <p>Terms of UseOpens in a new window.</p>
+            <p>Do Not Sell My Personal InformationOpens in a new window.</p>
+            <p>©2021 Travelscape LLC, An Expedia Group</p>
+            <p>Company. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
+
+<script src="paymentpage.js"></script>
