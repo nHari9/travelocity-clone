@@ -8,22 +8,23 @@
     <link rel="stylesheet" href="paymentpage.css">
 </head>
 <body>
-    <header>
-        <nav>
-          <div id="leftNav">
-            <img
-              src="https://www.travelocity.com/_dms/header/logo.svg?locale=en_US&amp;siteid=80001&amp;2"
-              alt="travelocity"
-            />
+            <header>
+                <nav>
+                <div id="leftNav">
+                    <img
+                    src="https://www.travelocity.com/_dms/header/logo.svg?locale=en_US&amp;siteid=80001&amp;2"
+                    alt="travelocity"
+                    />
 
-          </div>
-          <div id="rightNav">
-            <a href="#">Sign in</a>
-          </div>
-        </nav>
-      </header>
+                </div>
+                <div id="rightNav">
+                    <a href="#">Sign in</a>
+                </div>
+                </nav>
+            </header>
 
       <div class="roundtrip">
+
           <h2>Roundtrip</h2>
           <p>#</p>
           <hr>
@@ -46,7 +47,8 @@
           <p> Congratulations! You're getting the lowest possible rate. We guarantee it.</p>
       </div>
 
-    <div class="paymentpage">
+     <div class="paymentpage">
+
         <div>
             <h2>Secure booking - only takes a few minutes!</h2>
         </div>
@@ -56,64 +58,78 @@
         </div>
 
         <div class="div1">
-            <label for="">Signed in as</label>
+            <label>Signed in as</label>
             <p>user name from local storage</p>
             <p>We'll send your confirmation here.</p>
         </div>
 
 
         <div class="whos">
+
            <h2>Who's travelling?</h2>
+
            <p>Traveler names must match government-issued photo ID exactly.</p>
+
            <div>
-            <label for="">Traveler name*</label><br>
+            <label>Traveler name*</label><br>
             <select name="" id="travelername">
                 <option value="">Sigin name</option>
                 <option value="">Add a new traveller</option>
                 <option value="">Select from my account</option> 
             </select>
-        </div>
+          </div>
+
            <div class="details">
               
                <div>
                    <label>Title*</label><br>
                    <select name="" id="title">
                        <option value=""></option>
-                       <option value="">Mr.</option>
-                       <option value="">Ms.</option>
-                       <option value="">Mrs.</option>
-                       <option value="">Miss</option>
-                       <option value="">Master</option>
-                       <option value="">Dr.</option>
-                       <option value="">Prof.</option>
+                       <option value="Mr.">Mr.</option>
+                       <option value="Ms.">Ms.</option>
+                       <option value="Mrs.">Mrs.</option>
+                       <option value="Miss">Miss</option>
+                       <option value="Master">Master</option>
+                       <option value="Dr.">Dr.</option>
+                       <option value="Prof.">Prof.</option>
                    </select>
                </div>
+
                <div>
-                   <label for="firstname">Firstname*</label><br>
-                   <input type="text">
+                   <label>Firstname*</label><br>
+                   <input type="text" id="firstname">
                </div>
+
                <div>
-                   <label for="middlename">Middle name</label><br>
-                   <input type="text">
+                   <label>Middle name</label><br>
+                   <input type="text" id="middlename">
                </div>
+
                <div>
-                   <label for="lastname">Last name*</label><br>
-                   <input type="text">
+                   <label>Last name*</label><br>
+                   <input type="text" id="lastname">
                </div>
+
            </div>
 
            <div>
-            <label for="country">Country/Territory Code*</label><br>
-            <select name="" id="countrycode">
-                <option value="">United States of America +1</option>
+
+            <label>Country/Territory Code*</label><br>
+
+            <select id="countrycode">
+                <option value="United States of America +1">United States of America +1</option>
             </select><br>
-               <label for="phone">Phone number*</label><br>
-               <input type="tel"><br>
+
+               <label>Phone number*</label><br>
+               <input type="tel" id="phone"><br>
+
                <input type="checkbox" name="" id=""><span>Receive text alerts about this trip. Message and data rates may apply.</span><br>
-               <input type="checkbox" name="" id="roundcheck">
+
+               <input type="checkbox">
                <span>Male</span>
-               <input type="checkbox" name="" class="roundcheck">
+               <input type="checkbox">
                <span>Female</span><br>
+
                <label for="dob">Date of birth*</label><br>
                <select name="Month" id="month">
                    <option value="">Month</option>
@@ -133,6 +149,7 @@
         </div>
 
         <div class="protect">
+
             <h2>Protect your flight  <a>Recommended</a></h2>
             <div class="imp">
                 <p> Important:Trip cancellation due to government travel advisories, fear of travel, or change of mind is not covered. Travel insurance may provide coverage for COVID-19 diagnosed illness. COVID-19 is a foreseen event and certain other coverages will not apply.  Learn more</p>
@@ -146,7 +163,7 @@
                 <li>$50,000 for covered emergency medical transportation</li>
             </ol>
             <a href="">View insurance details and disclosures </a><br>
-            <label for="">Select Yes or No to continue booking*</label><br>
+            <label>Select Yes or No to continue booking*</label><br>
             <input type="checkbox" name="" id="">
             Yes, I want to add the Flight Protection Plan to my flight.  <br>
             <input type="checkbox" name="" id="">
@@ -156,45 +173,58 @@
 
 
         <div class="how">
+
             <h2>How would you like to pay?</h2>
+
             <img src="https://a.travel-assets.com/dms-svg/payments/cards-cc_master_card.svg" alt="">
             <img src="https://a.travel-assets.com/dms-svg/payments/cards-cc_visa.svg" alt=""><br>
-            <label for="">Name on Card*</label><br>
-            <input type="text" name="" id=""><br>
-            <label for="">Debit/Credit card number*</label><br>
-            <input type="number" name="" id=""><br>
-            <label for="">Expiration date*</label><br>
-            <select name="" id="">
+
+            <label>Name on Card*</label><br>
+            <input type="text" id="nameoncard"><br>
+
+            <label>Debit/Credit card number*</label><br>
+            <input type="number" id="carddetails"><br>
+
+            <label>Expiration date*</label><br>
+            <select id="expiremonth">
                 <option value="">Month</option>
                 <option value="">12</option>
             </select>
-            <select name="" id="">
+            <select id="expireyear">
                 <option value="">Year</option>
                 <option value="">2022</option>
             </select><br>
-            <label for="">Security code*</label><br>
-            <input type="number" name="" id="">
+            <label>Security code*</label><br>
+            <input type="number" id="cvv">
+
             <hr>
-            <label for="">Country/Territory*</label><br>
-            <select name="" id="">
+
+            <label>Country/Territory*</label><br>
+            <select id="country">
                 <option value="">United States of America</option>
                 <option value="">India</option>
             </select><br>
-            <label for="">Billing address 1*</label><br>
-            <input type="text" placeholder="(ex. 123 Main)"><br>
-            <label for="">Billing address 2</label><br>
-            <input type="text" name="" id="" placeholder="(ex. Suite 400, Apt. 4B)"><br>
-            <label for="">City*</label><br>
-            <input type="text"><br>
-            <label for="">State*</label><br>
-            <select name="" id="">
+
+            <label>Billing address 1*</label><br>
+            <input type="text" placeholder="(ex. 123 Main)" id="address1"><br>
+
+            <label>Billing address 2</label><br>
+            <input type="text" id="address2" placeholder="(ex. Suite 400, Apt. 4B)"><br>
+
+            <label>City*</label><br>
+            <input type="text" id="city"><br>
+
+            <label>State*</label><br>
+            <select  id="state">
                 <option value="">select</option>
                 <option value=""></option>
             </select><br>
-            <label for="">ZIP code*</label><br>
-            <input type="number"><br>
-            <input type="checkbox" name="" id="">
-            <p>Remember this card for future use</p>
+
+            <label>ZIP code*</label><br>
+            <input type="number" id="zipcode"><br>
+
+            <input type="checkbox"  id="">Remember this card for future use
+            
         </div>
 
 
