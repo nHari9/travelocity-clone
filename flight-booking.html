@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      type="image/x-icon"
+      href="https://www.travelocity.com/favicon.ico"
+      sizes="16x16 32x32"
+      rel="shortcut icon"
+    />
+    <title>
+      Wander Wisely with Cheap Hotels, Flights, Vacations & Travel Deals |
+      Travelocity
+    </title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <style>
+      body {
+        padding: 0px 0px;
+        margin: 0px;
+        font-family: sans-serif;
+        background-color: #f0f3f5;
+      }
+      header {
+        width: 100%;
+        background-color: #0a438b;
+        height: 50px;
+        margin: 0px;
+        padding: 10px 0px;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+      }
+      #leftNav {
+        display: flex;
+      }
+      #leftNav > img {
+        margin-right: 20px;
+      }
+      #rightNav {
+        display: flex;
+        padding-top: 20px;
+      }
+      #rightNav > a {
+        margin-left: 20px;
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+      }
+      ​ .material-icons {
+        margin-top: 15px;
+        color: #1f3366;
+      }
+      #dropDown {
+        position: relative;
+      }
+      #dropMenu {
+        position: absolute;
+        z-index: 10;
+        visibility: hidden;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        border-radius: 40px;
+        box-shadow: 5px 5px 20px #0a438b;
+      }
+      #dropDown > button {
+        width: 100px;
+        margin: 10px 0px;
+        background-color: transparent;
+        color: white;
+        border: none;
+      }
+      .anchor {
+        width: 250px;
+        padding: 10px 20px;
+      }
+      .anchor > a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+        display: block;
+      }
+      .anchor > a:hover {
+        text-decoration: none;
+        color: white;
+        background-color: #0a438b;
+        font-size: 20px;
+        font-weight: 600;
+      }
+      #container {
+        height: 160px;
+        width: 100%;
+        padding-top: 20px;
+        border: 2px solid transparent;
+        background-color: white;
+      }
+      a {
+        margin-left: 100px;
+        font-size: 20px;
+        color: blue;
+      }
+      #oneway {
+        padding: 5px;
+        border-radius: 15px;
+      }
+      #leavingdet {
+        display: flex;
+      }
+      .leavingfrom {
+        height: 80px;
+        width: 380px;
+        margin-top: 20px;
+        margin-left: 80px;
+        border: 3px solid transparent;
+        border-radius: 10px;
+        box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+          rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+      }
+      .leavingto {
+        height: 80px;
+        width: 380px;
+        margin-top: 20px;
+        margin-left: 30px;
+        border: 3px solid transparent;
+        border-radius: 10px;
+        box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+          rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+      }
+      .leavingto > p {
+        padding: 0px;
+        margin: 0px;
+        margin-left: 30px;
+      }
+      .leavingfrom > p {
+        padding: 0px;
+        margin: 0px;
+        margin-left: 30px;
+      }
+      #depart {
+        height: 80px;
+        width: 200px;
+        margin-top: 20px;
+        margin-left: 24px;
+        border: 3px solid transparent;
+        border-radius: 10px;
+        box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+          rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+      }
+      #depart > p {
+        padding: 0px;
+        margin: 0px;
+        margin-left: 30px;
+      }
+      #return {
+        height: 80px;
+        width: 200px;
+        margin-top: 20px;
+        margin-left: 24px;
+        border: 3px solid transparent;
+        border-radius: 10px;
+        box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+          rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+      }
+      #return > p {
+        padding: 0px;
+        margin: 0px;
+        margin-left: 30px;
+      }
+      option {
+        font-size: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        border: 3px solid transparent;
+        box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+          rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="leftNav">
+          <img
+            src="https://www.travelocity.com/_dms/header/logo.svg?locale=en_US&amp;siteid=80001&amp;2"
+            alt="travelocity"
+          />
+          <div id="dropDown">
+            <button onclick="dropMenu()"><p>More Travel</p></button>
+            <div id="dropMenu">
+              <div class="anchor"><a href="">Packages</a></div>
+              <div class="anchor"><a href="">Stays</a></div>
+              <div class="anchor"><a href="">Cars</a></div>
+              <div class="anchor"><a href="">Flights</a></div>
+              <div class="anchor"><a href="">Cruises</a></div>
+              <div class="anchor"><a href="">Things to do</a></div>
+              <div class="anchor"><a href="">Tips for me</a></div>
+              <div class="anchor"><a href="">Discover</a></div>
+              <div class="anchor"><a href="">Travel Deals</a></div>
+            </div>
+          </div>
+          <div onclick="dropMenu()">
+            <span class="material-icons" style="color: white; margin-top: 20px"
+              >expand_more</span
+            >
+          </div>
+        </div>
+        <div id="rightNav">
+          <a href="#">Espanol</a>
+          <a href="#">List your property</a>
+          <a href="#">Support</a>
+          <a href="#">Support</a>
+          <a href="#">Sign in</a>
+        </div>
+      </nav>
+    </header>
+    <div id="container">
+      <a href="#">OneWay</a>
+      <select id="oneway">
+        <option value="">---</option>
+        <option value="">OneWay</option>
+        <option value="">Round Trip</option>
+        <option value="">Multi-city</option>
+      </select>
+      <a href="#">1 traveller</a>
+      <select id="oneway">
+        <option value="">---</option>
+        <option value="">Adults</option>
+        <option value="">Children</option>
+        <option value="">Infant</option>
+      </select>
+      <a href="#">Economy</a>
+      <select id="oneway">
+        <option value="">---</option>
+        <option value="">Economy</option>
+        <option value="">Premium Class</option>
+        <option value="">Business Class</option>
+        <option value="">First Class</option>
+      </select>
+      <a href="#">Airways</a>
+      <select id="oneway">
+        <option value="">---</option>
+        <option value="">Air Indian</option>
+        <option value="">Thai Airways</option>
+        <option value="">British Airways</option>
+      </select>
+      <div id="leavingdet">
+        <div class="leavingfrom">
+          <p>Flying from</p>
+        </div>
+        <div class="leavingto">
+          <p>Flying to</p>
+        </div>
+        <div id="depart">
+          <p>Departing</p>
+        </div>
+        <div id="return">
+          <p>Returning</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  var count = 0;
+  function dropMenu() {
+    if (count == 0) {
+      document.getElementById("dropMenu").style.visibility = "visible";
+      count = 1;
+    } else if (count == 1) {
+      document.getElementById("dropMenu").style.visibility = "hidden";
+      count = 0;
+    }
+  }
+</script>
