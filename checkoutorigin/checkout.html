@@ -63,15 +63,17 @@
         margin-top: 10%;
         width: 80%;
         margin: auto;
-        border: 1px solid black;
-        height: 600px;
+        /* border: 1px solid black; */
+        height: 1000px;
        
         /* grid-template-columns: repeat(2,1fr); */
       }
       .leftdiv{
           margin-top: 50px;
+        
+        height: 100px;
         width: 60%;
-        border: 1px solid red;
+        /* border: 1px solid red; */
     
       }
       .leftdiv > :first-child{
@@ -88,13 +90,14 @@
           width: 30px;
       }
       .checkCovid{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           height: 90px;
         border-radius: 10px;
         width: 100%;
         font-weight: normal;
        
           background-color: #505c66;
-          border: 1px solid green;
+          /* border: 1px solid green; */
           color:#ffffff;
           display: flex;
           /* grid-template-columns: repeat(2,1fr); */
@@ -124,18 +127,12 @@
       .stayFlaxible{
           margin-top: 20px;
           width: 100%;
-          border: 1 px solid yellow;
+          /* border: 1 px solid yellow */
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           
           height: 80px;
       }
-      
-     .rightdiv{
-         margin-left: 25px;
-         margin-right: 200px;
-         width:100%;
-         border: 1px solid  royalblue;
-        height: 400px;
-     }
+    
      .stayflaxibleclass{
          line-height: 10px;
          margin-top: 10px;
@@ -175,10 +172,12 @@
      .plansection{
 
          background-color: #ffffff;
-         border: 1px solid hotpink;
+         /* border: 1px solid hotpink; */
          margin: auto;
+         border-radius: 10px;
          margin-top: 50px;
-         height: 800px;
+         height: 700px;
+         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
      }
      .flitimg{
          display: flex;
@@ -261,6 +260,70 @@
          padding-top: 20px;
         color: blue;
      }
+      .txtdiv>:last-child{
+        color: black;
+       }
+     .lastDiv{
+       margin-top: 250px;
+     }
+     
+     .rightdiv{
+       background-color: #ffffff;
+        margin-top: 100px;
+         margin-left: 55px;
+         margin-right: 20px;
+        width: 40%;
+         /* border: 1px solid  royalblue; */
+         border-radius: 10px;
+        height: 420px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+     }
+     .checkout{
+       /* border:1px solid red; */
+       width: 90%;
+       margin-left: 20px;
+      
+     }
+.tr{
+     color: black;
+   }
+  
+     .tr1{
+       color: grey;
+     }
+      .tr2{
+        color: grey;
+      }
+     .tabletop{
+      /* border: 1px solid yellow; */
+       width: 100%;
+       height: 100px;
+     }
+     .checkout2{
+       /* border:1px solid red; */
+       width: 90%;
+       margin-left: 20px;
+       color: black;
+
+     }
+     .table2{
+       width: 100%;
+       height: 60px;
+       /* border: 1px solid hotpink; */
+     }
+    #text{
+      font-size: 15px;
+      color: grey;
+    }
+    #checkoutBtn{
+      background-color: #0d5ab9;
+      border-radius: 10px;
+      font-size: 20px;
+      width: 100%;
+      color:#ffffff;
+      height: 60px;
+      padding: 10px;
+    }
     
     </style>
   </head>
@@ -306,7 +369,7 @@
                     <span>Go First .  MAA</span> 
                     <span class="material-icons">arrow_forward</span>
                     <span>DEL</span><pre>   </pre>  
-                    <b> <span>Reviw your trip</span></b>
+                    <b><span>Reviw your trip</span></b>
             </div>
             <!-- check Covid -->
             <div class="checkCovid">
@@ -392,16 +455,40 @@
                                   
                             
                         </div>
-                        <hr>
+                     
                     </section>
+                    <div class="lastDiv">
+                      <hr>
+                      <a href="#"><span>Chage flight</span></a>
+                      <center><span>Tell Us how  we can improve our site </span></center>
+                    </div>
+                   
                   </div>
 
               </section>
+              <hr>
         </div>
         <!-- RigtDiv -->
         <div class="rightdiv">
             <div class="checkout">
-                
+              <h1>Price Summay</h1>
+              <table class="tabletop">
+                <tr class="tr"><td><h3>Travler 1: Adult</h3></td><td><h3>$ 82.24</h3></td></tr>
+                <tr class="tr1"><td>Flight</td><td>$68.28</td></tr>
+                <tr class="tr2"><td>taxes and fess</td><td>$13.96</td></tr>
+              </table>
+            
+
+            </div>
+            <hr>
+            <div class="checkout2">
+            <div class="button"> 
+              <table class="table2">
+                <tr><td><h2>Trip Total</h2></td><td>       </td><td><h2>$ 82.24</h2></td></tr>
+              </table>
+              <p id="text">Rates are quoted in US dollars</p>
+              <button id="checkoutBtn">check out</button>
+            </div>
             </div>
         </div>
      
