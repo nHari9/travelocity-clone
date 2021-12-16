@@ -97,27 +97,19 @@
         font-weight: 600;
       }
       #container {
-        height: 160px;
+        height: 120px;
         width: 100%;
         padding-top: 20px;
         border: 2px solid transparent;
         background-color: white;
       }
-      a {
-        margin-left: 100px;
-        font-size: 20px;
-        color: blue;
-      }
-      #oneway {
-        padding: 5px;
-        border-radius: 15px;
-      }
       #leavingdet {
         display: flex;
       }
       .leavingfrom {
-        height: 80px;
+        height: 60px;
         width: 380px;
+        display: flex;
         margin-top: 20px;
         margin-left: 80px;
         border: 3px solid transparent;
@@ -126,10 +118,11 @@
           rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
       }
       .leavingto {
-        height: 80px;
+        height: 60px;
         width: 380px;
+        display: flex;
         margin-top: 20px;
-        margin-left: 60px;
+        margin-left: 10px;
         border: 3px solid transparent;
         border-radius: 10px;
         box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
@@ -138,16 +131,17 @@
       .leavingto > p {
         padding: 0px;
         margin: 0px;
-        margin-left: 30px;
+        margin-left: 10px;
       }
       .leavingfrom > p {
         padding: 0px;
         margin: 0px;
-        margin-left: 30px;
+        margin-left: 10px;
       }
       #depart {
-        height: 80px;
+        height: 60px;
         width: 200px;
+        display: flex;
         margin-top: 20px;
         margin-left: 24px;
         border: 3px solid transparent;
@@ -158,9 +152,13 @@
       #depart > p {
         padding: 0px;
         margin: 0px;
-        margin-left: 30px;
+        margin-left: 10px;
       }
-      #return {
+      /* #depart > span {
+        size: 48px;
+      } */
+
+      /* #return {
         height: 80px;
         width: 200px;
         margin-top: 20px;
@@ -174,20 +172,14 @@
         padding: 0px;
         margin: 0px;
         margin-left: 30px;
-      }
-      option {
-        font-size: 20px;
-        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-        border: 3px solid transparent;
-        box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
-          rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
-      }
+      } */
       .mainbody {
         width: 100%;
         height: 3000px;
         border: 2px solid black;
+        display: flex;
       }
-      #choosedate {
+      /* #choosedate {
         height: 150px;
         width: 65%;
         margin-top: 90px;
@@ -218,34 +210,145 @@
         font-size: 18px;
         padding-left: 12px;
         margin: 10px;
-      }
+      } */
       .s1 {
-        height: 70px;
-        width: 160px;
+        height: 60px;
+        width: 120px;
         color: white;
         background-color: blue;
         border-radius: 12px;
         margin-top: 20px;
         margin-left: 24px;
         font-size: 20px;
+        font-weight: 700;
         box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
           rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
       }
+      .s1:hover {
+        background-color: lightblue;
+      }
       #para1 {
         font-size: 16px;
-        margin-left: 400px;
+        margin-left: 30px;
         margin-right: 500px;
-        margin-top: 50px;
+        margin-top: 30px;
       }
       .flight {
-        height: 180px;
-        width: 65%;
-        border: 2px solid transparent;
+        height: 120px;
+        width: 85%;
+        border: 2px solid black;
         background-color: white;
         border-radius: 12px;
+        display: flex;
+        justify-content: space-between;
         margin-top: 30px;
-        margin-left: 400px;
+        margin-left: 30px;
         margin-right: 300px;
+      }
+      .flight > div:nth-child(1) {
+        border: 1px solid black;
+        height: 100%;
+        width: 25%;
+        border-radius: 10px;
+      }
+      .flight > div:nth-child(1) > p {
+        font-size: 18px;
+        margin-left: 20px;
+      }
+      .flight > div:nth-child(1) > h2 {
+        margin-left: 20px;
+      }
+      .flight > div:nth-child(2) {
+        font-size: 30px;
+        font-weight: 800;
+        height: 100%;
+        width: 10%;
+        border: 2px solid black;
+      }
+      .rightbox {
+        height: 100%;
+        width: 75%;
+        border: 2px solid black;
+      }
+      .leftbox {
+        height: 100%;
+        width: 24%;
+        border: 2px solid black;
+      }
+      .sort {
+        height: 110px;
+        width: 22%;
+        display: flex;
+        border: 2px solid transparent;
+        border-radius: 12px;
+        margin-top: 10px;
+        box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+          rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+      }
+      #sort1 {
+        height: 99%;
+        width: 80%;
+        border: 2px solid transparent;
+      }
+      #sort1 > label {
+        font-size: 30px;
+        margin-left: 25px;
+      }
+      #sort1 > select {
+        height: 43px;
+        width: 109%;
+        margin: 20px;
+        border: none;
+        background-color: #f0f3f5;
+        font-size: 25px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      #sort2 {
+        height: 99%;
+        width: 20%;
+        border: 2px solid transparent;
+      }
+      .parasort > div:nth-child(1) {
+        height: 40%;
+        width: 70%;
+        margin: 40px 23px;
+        border: 2px solid transparent;
+      }
+      .parasort {
+        width: 99%;
+        height: 130px;
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid black;
+      }
+      .filterbox {
+        height: 500px;
+        width: 76%;
+        margin-left: 90px;
+        border: 2px solid black;
+      }
+      .filterbox > div {
+        height: 40%;
+        width: 100%;
+        border: 1px solid black;
+        margin-top: 20px;
+      }
+      .filterbox > div > div {
+        margin: 10px 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+      #departurebox {
+        height: 350px;
+        width: 98%;
+        margin: 20px 0px;
+        border: 2px solid black;
+      }
+      #arrivalbox {
+        height: 350px;
+        width: 98%;
+        margin: 20px 0px;
+        border: 2px solid black;
       }
     </style>
   </head>
@@ -287,77 +390,105 @@
       </nav>
     </header>
     <div id="container">
-      <a href="#">OneWay</a>
-      <select id="oneway">
-        <option value="">---</option>
-        <option value="">OneWay</option>
-        <option value="">Round Trip</option>
-        <option value="">Multi-city</option>
-      </select>
-
-      <a href="#">1 traveller</a>
-      <select id="oneway">
-        <option value="">---</option>
-        <option value="">Adults</option>
-        <option value="">Children</option>
-        <option value="">Infant</option>
-      </select>
-      <a href="#">Economy</a>
-      <select id="oneway">
-        <option value="">---</option>
-        <option value="">Economy</option>
-        <option value="">Premium Class</option>
-        <option value="">Business Class</option>
-        <option value="">First Class</option>
-      </select>
-      <a href="#">Airways</a>
-      <select id="oneway">
-        <option value="">---</option>
-        <option value="">Air Indian</option>
-        <option value="">Thai Airways</option>
-        <option value="">British Airways</option>
-      </select>
       <div id="leavingdet">
         <div class="leavingfrom">
+          <span class="material-icons" style="font-size: 45px; margin-top: 6px">
+            location_on
+          </span>
           <p>Flying from</p>
         </div>
+        <span
+          class="material-icons"
+          style="font-size: 50px; margin-left: 15px; margin-top: 27px"
+        >
+          arrow_forward
+        </span>
         <div class="leavingto">
+          <span class="material-icons" style="font-size: 45px; margin-top: 6px">
+            location_on
+          </span>
           <p>Flying to</p>
         </div>
         <div id="depart">
+          <span class="material-icons" style="font-size: 40px; margin-top: 6px">
+            today
+          </span>
           <p>Departing</p>
         </div>
-        <div id="return">
+        <!-- <div id="return">
           <p>Returning</p>
-        </div>
+        </div> -->
         <button class="s1">SEARCH</button>
       </div>
     </div>
+
     <!-- mainbody -->
+
     <div class="mainbody">
-      <div id="choosedate">
-        <p>Choose departing flight ></p>
-        <div id="date">
-          <p>Flexible dates</p>
-          <p>Compare Prices for nearby dates</p>
+      <div class="leftbox">
+        <div class="filterbox">
+          <h1>Filter By</h1>
+          <div>
+            <div>
+              <h3>Stops</h3>
+              <h3>From</h3>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h3>Airlines</h3>
+              <h3>From</h3>
+            </div>
+          </div>
+        </div>
+        <div id="departurebox"></div>
+        <div id="arrivalbox"></div>
+      </div>
+      <div class="rightbox">
+        <div class="parasort">
+          <div>
+            Prices displayed include taxes and may change based on availability.
+            You can review any additional fees before checkout. Prices are not
+            final until you complete your purchase.
+          </div>
+
+          <div class="sort">
+            <div id="sort1">
+              <label value="">Sort By</label>
+              <select id="pricesort">
+                <option value="">Price(Lowest)</option>
+                <option value="">Price(Highest)</option>
+              </select>
+            </div>
+            <div id="sort2">
+              <span
+                class="material-icons"
+                style="font-size: 50px; margin-top: 50px"
+              >
+                expand_more
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="flight">
+          <div>
+            <h2>6.40am - 7.15pm</h2>
+            <p>Chennai(MAA) - Delhi(DEL)</p>
+          </div>
+          <div>
+            <p>$186</p>
+          </div>
         </div>
       </div>
-      <hr />
-      <p id="para1">
-        Prices displayed include taxes and may change based on availability. You
-        can review any additional fees before checkout. Prices are not final
-        until you complete your purchase.
-      </p>
-      <div class="flight"></div>
-      <div class="flight"></div>
-      <div class="flight"></div>
-      <div class="flight"></div>
-      <div class="flight"></div>
-      <div class="flight"></div>
-      <div class="flight"></div>
-      <div class="flight"></div>
-      <div class="flight"></div>
     </div>
+    <!-- /*
+    <div id="choosedate">
+      <p>Choose departing flight ></p>
+      <div id="date">
+        <p>Flexible dates</p>
+        <p>Compare Prices for nearby dates</p>
+      </div>
+    </div> -->
   </body>
 </html>
 <script>
