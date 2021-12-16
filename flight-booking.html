@@ -157,7 +157,7 @@
       .mainbody {
         width: 100%;
         height: 3000px;
-        /* border: 2px solid black; */
+        border: 2px solid transparent;
         display: flex;
       }
       .s1 {
@@ -185,7 +185,7 @@
       .flight {
         height: 120px;
         width: 85%;
-        /* border: 2px solid black; */
+        border: 2px solid transparent;
         background-color: white;
         border-radius: 12px;
         display: flex;
@@ -195,7 +195,11 @@
         margin-right: 300px;
       }
       .flight > div:nth-child(1) {
-        /* border: 1px solid black; */
+
+        border: 1px solid transparent;
+
+       
+
         height: 100%;
         width: 25%;
         border-radius: 10px;
@@ -212,17 +216,29 @@
         font-weight: 800;
         height: 100%;
         width: 10%;
-        /* border: 2px solid black; */
+
+        border: 2px solid transparent;
+
+
+
       }
       .rightbox {
         height: 100%;
         width: 75%;
-        /* border: 2px solid black; */
+
+        border: 2px solid transparent;
+
+        
+
       }
       .leftbox {
         height: 100%;
         width: 24%;
-        /* border: 2px solid black; */
+
+        border: 2px solid transparent;
+
+       
+
       }
       .sort {
         height: 90px;
@@ -268,24 +284,39 @@
         height: 130px;
         display: flex;
         justify-content: space-between;
-        /* border: 2px solid black; */
+
+        border: 2px solid transparent;
+
+        
+
       }
       .filterbox {
         height: 370px;
         width: 76%;
         margin-top: 20px;
         margin-left: 40px;
-        /* border: 2px solid black; */
+
+        border: 2px solid transparent;
+
+        
+
       }
       #filterstop {
         height: 40%;
         width: 100%;
-        /* border: 1px solid black; */
+     border: 1px solid transparent;
+
+        
+
       }
       #filterairline {
         height: 40%;
         width: 100%;
-        /* border: 1px solid black; */
+
+        border: 1px solid transparent;
+
+        
+
       }
       .title {
         display: flex;
@@ -301,14 +332,18 @@
         width: 80%;
         margin: 20px 0px;
         margin-left: 30px;
-        /* border: 2px solid black; */
+
+        border: 2px solid transparent;
+
+        
+
       }
       .deparrcontainer {
         display: grid;
         grid-template-columns: repeat(2, 110px);
         grid-template-rows: repeat(2, 80px);
         grid-gap: 10px;
-        margin-top: 22px;
+        margin-top: 8px;
         margin-left: 12px;
         border: 2px solid transparent;
         height: 180px;
@@ -317,6 +352,7 @@
       .deparrcontainer > div {
         /* border: 2px solid black; */
         border-radius: 12px;
+        background-color: white;
       }
       #departurebox > p {
         font-weight: 800;
@@ -325,13 +361,19 @@
       #arrivalbox {
         height: 250px;
         width: 80%;
-        margin: 20px 0px;
+        margin: 10px 0px;
         margin-left: 30px;
-        /* border: 2px solid black; */
+
+        border: 2px solid transparent;
+       
+
       }
       #arrivalbox > p {
         font-weight: 800;
         font-size: 16px;
+      }
+      div > h5 {
+        margin: 9px;
       }
     </style>
   </head>
@@ -459,19 +501,43 @@
         <div id="departurebox">
           <p>Departure Time</p>
           <div class="deparrcontainer">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+              <h5>Early Morning</h5>
+              <h5>(12.00am - 4.59am</h5>
+            </div>
+            <div>
+              <h5>Morning</h5>
+              <h5>(5.00am - 11.59am)</h5>
+            </div>
+            <div>
+              <h5>Afternoon</h5>
+              <h5>(12.00pm-5.59pm)</h5>
+            </div>
+            <div>
+              <h5>Evening</h5>
+              <h5>(6.00pm - 11.59pm)</h5>
+            </div>
           </div>
         </div>
         <div id="arrivalbox">
           <p>Arrival Time</p>
           <div class="deparrcontainer">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+              <h5>Early Morning</h5>
+              <h5>(12.00am - 4.59am</h5>
+            </div>
+            <div>
+              <h5>Afternoon</h5>
+              <h5>(12.00pm-5.59pm)</h5>
+            </div>
+            <div>
+              <h5>Afternoon</h5>
+              <h5>(12.00pm-5.59pm)</h5>
+            </div>
+            <div>
+              <h5>Evening</h5>
+              <h5>(6.00pm - 11.59pm)</h5>
+            </div>
           </div>
         </div>
       </div>
