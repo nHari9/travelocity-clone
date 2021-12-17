@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create an account</title>
     <style>
-
+        header img{
+            margin-left: 40%;
+            height: 30px;
+       }
         .signup{
            
             margin: auto;
@@ -48,10 +51,35 @@
             cursor: pointer;
             
         }
+        .logos{
+            display: flex;
+            justify-content: center;
+        }
+        .img1{
+            width: 18px;
+            height: 18px;
+        }
+        .img2{
+            width: 18px;
+            height: 18px;
+            margin-left: 20px;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="icon">
+                <img
+                src="https://www.travelocity.com/_dms/interstitial/logo.svg?locale=en_US&siteid=80001"
+                alt="travelocity"
+              />
+            </div>
+            <hr>
+        </nav>
+      </header>
     <div class="signup">
+
      <form>
          <h1><b>Create an account</b></h1>
          <input type="email" id="email" placeholder="Email address"><br>
@@ -62,8 +90,17 @@
          <button>Continue</button>
         
      </form>
-     <p>Already have an account? <a>Sign in</a></p>
+     <p>Already have an account? <a href="signin.html">Sign in</a></p>
      <p>or continue with</p>
+
+     <div class="logos">
+        <div class="img1">
+            <img src="https://a.travel-assets.com/egds/marks/facebook.svg" alt="">
+        </div>
+        <div class="img2">
+            <img src="https://a.travel-assets.com/egds/marks/apple.svg" alt="">
+        </div>
+     </div>
 
     </div>
 </body>
