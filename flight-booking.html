@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -57,13 +57,15 @@
         </div>
       </nav>
     </header>
+
     <div id="container">
       <div id="leavingdet">
         <div class="leavingfrom">
           <span class="material-icons" style="font-size: 35px; margin-top: 6px">
             location_on
           </span>
-          <p>Flying from</p>
+          <p>Flying from</p><br>
+          <h3></h3>
         </div>
         <span
           class="material-icons"
@@ -76,12 +78,14 @@
             location_on
           </span>
           <p>Flying to</p>
+          <h3></h3>
         </div>
         <div id="depart">
           <span class="material-icons" style="font-size: 32px; margin-top: 6px">
             today
           </span>
           <p>Departing</p>
+          <h3></h3>
         </div>
 
         <button class="s1">SEARCH</button>
@@ -213,11 +217,11 @@
         </div>
         <div class="flight">
           <div>
-            <h3>6.40am - 7.15pm</h3>
-            <p>Chennai(MAA) - Delhi(DEL)</p>
+            <h3 id="depTime">time</h3>
+            <p id="cities">cities</p>
           </div>
           <div>
-            <p>$186</p>
+            <p id="fPrice">$186</p>
           </div>
         </div>
       </div>

@@ -6,5 +6,7 @@ var count = 0;
     } else if (count == 1) {
       document.getElementById("dropMenu").style.visibility = "hidden";
       count = 0;
-    }
+    } 
   }
+
+  

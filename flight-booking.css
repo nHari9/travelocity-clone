@@ -1,5 +1,5 @@
 
-      body {
+      body { 
         padding: 0px 0px;
         margin: 0px;
         font-family: sans-serif;
@@ -141,17 +141,16 @@
         display: flex;
       }
       .s1 {
-        height: 45px;
-        width: 120px;
+        padding: 10px 20px;
+      border: none;
+        height: 60px;
         color: white;
-        background-color: blue;
-        border-radius: 12px;
+        background-color: #0a438b;
+        border-radius: 20px;
         margin-top: 7px;
         margin-left: 24px;
         font-size: 20px;
         font-weight: 700;
-        box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
-          rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
       }
       .s1:hover {
         background-color: lightblue;
