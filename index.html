@@ -4,235 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link type="image/x-icon" href="https://www.travelocity.com/favicon.ico" sizes="16x16 32x32" rel="shortcut icon">
+    <link
+      type="image/x-icon"
+      href="https://www.travelocity.com/favicon.ico"
+      sizes="16x16 32x32"
+      rel="shortcut icon"
+    />
     <title>
       Wander Wisely with Cheap Hotels, Flights, Vacations & Travel Deals |
       Travelocity
     </title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="index.css">
     <style>
-      body {
-        padding: 0px 0px;
-        margin: 0px;
-        font-family: sans-serif;
-        background-color: #f0f3f5;
-      }
-      header {
-        width: 100%;
-        background-color: #0a438b;
-        height: 50px;
-        margin: 0px;
-        padding: 10px 0px;
-      }
-      nav {
-        display: flex;
-        justify-content: space-between;
-        width: 80%;
-        margin: auto;
-      }
-      #leftNav > img {
-        margin-right: 20px;
-      }
-      #rightNav {
-        display: flex;
-        padding-top: 20px;
-      }
-      #rightNav > a {
-        margin-left: 20px;
-        font-size: 15px;
-        color: white;
-        text-decoration: none;
-      }
-      select {
-        border-color: transparent;
-        background-color: transparent;
-        color: white;
-        border: none;
-      }
-      select > option {
-        color: black;
-        font-size: 20px;
-        margin: 20px 20px;
-      }
-      select > option:hover {
-        color: blue;
-        background-color: white;
-      }
-      #fromTo {
-        background-image: url(https://forever.travel-assets.com/flex/flexmanager/images/2021/06/25/TVLY_SeizeYourSomeday_lpheroB_1680x945_20210623.jpg?impolicy=fcrop&w=1680&h=485&q=medium);
-        background-size: cover;
-        height: 480px;
-      }
-      #guarantees {
-        width: 80%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
-        margin: 20px auto;
-        height: 250px;
-        background-color: #f0f3f5;
-        margin-top: 30px;
-
-      }
-      .gcards {
-        height: 100%;
-        border-radius: 10px;
-        padding: 0px 0px;
-        background-color: white;
-      }
-      .gcards > div:first-child {
-        height: 75%;
-        padding: 0px;
-        margin: 0px 0px;
-        margin-top: -20px;
-        border: transparent;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-      }
-
-      .gcards > div:first-child > h3 {
-        position: relative;
-        bottom: -150px;
-        color: white;
-        opacity: 1;
-        text-shadow: 10px 10px 10px black;
-      }
-      .gcards p {
-        margin: 0px 10px;
-        color: grey;
-        line-height: 15px;
-      }
-      #deals {
-        width: 80%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px;
-        margin: 20px auto;
-        height: 250px;
-        background-color: #f0f3f5;
-        margin-top: 50px;
-      }
-      .dealCards {
-        height: 100%;
-        border-radius: 10px;
-        padding: 0px 0px;
-        background-color: white;
-      }
-      .bgOp{
-        width: 100%;
-        height: 100%;
-        color: white;
-        text-shadow: 20px 20px 20px black;
-        background-color: rgb(100, 100, 100, 0.3);
-        border-radius: 10px;
-        box-shadow: inset 0px -50px 60px rgb(51, 51, 51);
-      }
-      h2 {
-        margin: 0px;
-      }
-      .dealCardText {
-        width: 50%;
-        position: relative;
-        bottom: -70px;
-        margin-left: 30px;
-      }
-      .dealCardText>button{
-          color: rgb(13,90,185);
-          padding: 10px 20px;
-          border: 2px solid rgb(13,90,185);
-          border-radius: 10px;
-          font-weight: 700;
-      }
-      .dealCardText>button:hover{
-          background-color: rgb(211, 238, 241);
-          font-weight: 900;
-      }
-
-      /* Plans */
-      #plansSec{
-          width: 80%;
-          margin: 70px auto;
-      }
-      h1{
-          margin: 5px;
-          font-size: 30px;
-      }
-      #plans{
-        height: 220px;
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-gap: 20px;
-      }
-      .plansCards{
-          border-radius: 10px;
-      }
-      .plansCards h2{
-          position: relative;
-          bottom: -180px;
-      }
-
-      /* offers */
-      #offers{
-          width: 80%;
-          height: 350px;
-          margin: auto;
-      }
-      #offerbg{
-        width: 100%;
-        height: 80%;
-        position: relative;
-        border-radius: 10px;
-      }
-      #offerbg h3{
-          position: absolute;
-          bottom: 20px;
-          left: 0px;
-      }
-      #offerbg p{
-        position: absolute;
-          bottom: 0px;
-          left: 0px;
-      }
-      #ytVideo{
-          width: 80%;
-          margin: 50px auto;
-          height: 420px;
-          border-radius: 10px;
-      }
-      #ytVideo>iframe{
-          margin: 0px auto;
-          border-radius: 10px;
-      }
-      #help{
-          width: 80%;
-          margin: 30px auto;
-          height: 150px;
-      }
-      #helpButtons{
-          height: 50%;
-          display: grid;
-          grid-gap: 20px;
-          grid-template-columns: repeat(3,1fr);
-      }
-      .hbutton{
-          border: 1px solid grey;
-          border-radius: 10px;
-          display: flex;
-          padding-left: 10px;
-          background-color: white;
-      }
       
-      .hbutton>div:first-child{
-          width: 90%;
-      }
-      .hbutton p{
-          font-size: 12px;
-          color: rgb(85, 85, 85);
-      }
-      .material-icons{
-          margin-top: 15px;
-          color: #1F3366;
-      }
     </style>
   </head>
   <body>
@@ -243,33 +31,88 @@
             src="https://www.travelocity.com/_dms/header/logo.svg?locale=en_US&amp;siteid=80001&amp;2"
             alt="travelocity"
           />
-          <select>
-            <option>More travel</option>
-            <option value="">Packages</option>
-            <option value="">Stays</option>
-            <option value="">Cars</option>
-            <option value="">Flights</option>
-            <option value="">Cruises</option>
-            <option value="">Things to do</option>
-            <option value="">Tips for me</option>
-            <option value="">Discover</option>
-            <option value="">Travel Deals</option>
-            <option value="">Get Inspired</option>
-            <option value="">Groups & meetings</option>
-          </select>
+          <div id="dropDown">
+            <button onclick="dropMenu()"><p>More Travel</p></button>
+            <div id="dropMenu">
+              <div class="anchor"><a href="">Packages</a></div>
+              <div class="anchor"><a href="">Stays</a></div>
+              <div class="anchor"><a href="">Cars</a></div>
+              <div class="anchor"><a href="">Flights</a></div>
+              <div class="anchor"><a href="">Cruises</a></div>
+              <div class="anchor"><a href="">Things to do</a></div>
+              <div class="anchor"><a href="">Tips for me</a></div>
+              <div class="anchor"><a href="">Discover</a></div>
+              <div class="anchor"><a href="">Travel Deals</a></div>
+            </div>
+          </div>
+          <div onclick="dropMenu()">
+            <span class="material-icons" style="color: white; margin-top: 20px"
+              >expand_more</span
+            >
+          </div>
         </div>
         <div id="rightNav">
           <a href="#">Espanol</a>
           <a href="#">List your property</a>
           <a href="#">Support</a>
           <a href="#">Support</a>
-          <a href="signin.html">Sign in</a>
+          <a href="signin.html" id="signinText">Sign in</a>
         </div>
       </nav>
     </header>
 
     <!-- Top Div -->
-    <section id="fromTo"></section>
+    <section id="fromTo">
+      <div id="centralPanel">
+        <div id="searchNav">
+          <button id="flBtn" onclick="flForm()">Flights</button>
+          <button id="stBtn" onclick="stForm()">Stays</button>
+          <button>Packages</button>
+          <button>Things to do</button>
+        </div>
+        <hr />
+        <div id="searchPanel">
+          <div id="stayForm" style="text-align: center">
+            <h1>Stays</h1>
+            <form action="">
+              <input
+                type="text"
+                placeholder="Enter your destination city"
+              />
+              <input type="date" />
+              <input type="date" />
+              <input type="number" placeholder="Enter no. of rooms" /><br />
+              <button>Search</button>
+            </form>
+          </div>
+          <div id="flightForm" style="text-align: center">
+            <h1>Flights</h1>
+            <form action="">
+              <select name="fromCity" id="fromCity">
+                <option value="--">To</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Mumbai">Mumbai</option></select
+              >
+              <select name="toCity" id="toCity">
+                <option value="--">From</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option></select
+              >
+
+              <select name="fDate" id="fDate">
+                <option value="--">Date</option>
+                <option value="1 Jan">1 Jan</option>
+                <option value="2 Jan">2 Jan</option>
+                <option value="3 Jan">3 Jan</option></select
+              ><br />
+              <button id="fSearchBtn">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Guarantees Section -->
     <section id="guarantees">
@@ -348,89 +191,122 @@
       </div>
     </section>
 
-
     <!-- Start Planning yur next trip -->
     <section id="plansSec">
-        <h1>Start planning your next trip</h1>
-        <div id="plans">
-            <div class="plansCards" style="background: url(https://forever.travel-assets.com/flex/flexmanager/images/2021/11/08/TVLY_Storefront_Beach_imgB_900x506_20211104.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh); background-size: cover;">
-                <div class="bgOp">
-                    <h2>Sunny beach hotel offers</h2>
-                </div>
-            </div>
-            <div class="plansCards" style="background: url(https://forever.travel-assets.com/flex/flexmanager/images/2021/11/08/TVLY_Storefront_Car_imgB_900x506_20211104.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh);background-size: cover;">
-                <div class="bgOp">
-                    <h2>Car rental deals</h2>
-                </div>
-            </div>
-            <div class="plansCards" style="background: url(https://forever.travel-assets.com/flex/flexmanager/images/2021/11/08/TVLY_Storefront_MOD_imgB_900x506_20211104.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh);background-size: cover;">
-                <div class="bgOp">
-                    <h2>Member discounts</h2>
-                </div>
-            </div>
-            <div class="plansCards" style="background: url(https://forever.travel-assets.com/flex/flexmanager/images/2021/11/08/TVLY_Storefront_VacationRentals_imgB_900x506_20211104.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh) ;background-size: cover;">
-                <div class="bgOp">
-                    <h2>Vacation rental offers</h2>
-                </div>
-            </div>
+      <h1>Start planning your next trip</h1>
+      <div id="plans">
+        <div
+          class="plansCards"
+          style="
+            background: url(https://forever.travel-assets.com/flex/flexmanager/images/2021/11/08/TVLY_Storefront_Beach_imgB_900x506_20211104.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh);
+            background-size: cover;
+          "
+        >
+          <div class="bgOp">
+            <h2>Sunny beach hotel offers</h2>
+          </div>
         </div>
+        <div
+          class="plansCards"
+          style="
+            background: url(https://forever.travel-assets.com/flex/flexmanager/images/2021/11/08/TVLY_Storefront_Car_imgB_900x506_20211104.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh);
+            background-size: cover;
+          "
+        >
+          <div class="bgOp">
+            <h2>Car rental deals</h2>
+          </div>
+        </div>
+        <div
+          class="plansCards"
+          style="
+            background: url(https://forever.travel-assets.com/flex/flexmanager/images/2021/11/08/TVLY_Storefront_MOD_imgB_900x506_20211104.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh);
+            background-size: cover;
+          "
+        >
+          <div class="bgOp">
+            <h2>Member discounts</h2>
+          </div>
+        </div>
+        <div
+          class="plansCards"
+          style="
+            background: url(https://forever.travel-assets.com/flex/flexmanager/images/2021/11/08/TVLY_Storefront_VacationRentals_imgB_900x506_20211104.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh);
+            background-size: cover;
+          "
+        >
+          <div class="bgOp">
+            <h2>Vacation rental offers</h2>
+          </div>
+        </div>
+      </div>
     </section>
-
 
     <!-- offers -->
     <section id="offers">
-        <h1>Featured offers</h1>
-        <div id="offerbg" style="background :url(https://forever.travel-assets.com/flex/flexmanager/images/2021/11/08/TVLY_Storefront_Family_imgB_1200x674_20211104.jpg); background-size: cover; background-position: center;">
-            <div class="bgOp" style="">
-                <h3>Family vacation deals</h3>
-                <p>Seize your next unforgettable family vacation</p>
-            </div>
+      <h1>Featured offers</h1>
+      <div
+        id="offerbg"
+        style="
+          background: url(https://forever.travel-assets.com/flex/flexmanager/images/2021/11/08/TVLY_Storefront_Family_imgB_1200x674_20211104.jpg);
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div class="bgOp">
+          <h3>Family vacation deals</h3>
+          <p>Seize your next unforgettable family vacation</p>
         </div>
+      </div>
     </section>
 
     <!-- embeded youtube video -->
     <section id="ytVideo">
-        <iframe width="1215" height="420" src="https://www.youtube.com/embed/ItS8X0SjT4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe
+        width="1215"
+        height="420"
+        src="https://www.youtube.com/embed/ItS8X0SjT4s"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </section>
 
     <!-- help section -->
-    <section id="help"> 
-        <h1>Here to help keep you on the move</h1>
-        <div id="helpButtons">
-            <div class="hbutton">
-                <div>
-                    <h3>Change or cancel a trip</h3>
-                    <p>Make updates to your itinerary or cancel a booking</p>
-                </div>
-                <div>
-                    <span class="material-icons">edit</span>
-                </div>
-            </div>
-            <div class="hbutton">
-                <div>
-                    <h3>Change or cancel a trip</h3>
-                    <p>Make updates to your itinerary or cancel a booking</p>
-                </div>
-                <div>
-                    <span class="material-icons">monetization_on</span>
-                </div>
-            </div>
-            <div class="hbutton">
-                <div>
-                    <h3>Change or cancel a trip</h3>
-                    <p>Make updates to your itinerary or cancel a booking</p>
-                </div>
-                <div>
-                    <span class="material-icons">forum</span>  
-                </div>
-            </div>
+    <section id="help">
+      <h1>Here to help keep you on the move</h1>
+      <div id="helpButtons">
+        <div class="hbutton">
+          <div>
+            <h3>Change or cancel a trip</h3>
+            <p>Make updates to your itinerary or cancel a booking</p>
+          </div>
+          <div>
+            <span class="material-icons">edit</span>
+          </div>
         </div>
+        <div class="hbutton">
+          <div>
+            <h3>Change or cancel a trip</h3>
+            <p>Make updates to your itinerary or cancel a booking</p>
+          </div>
+          <div>
+            <span class="material-icons">monetization_on</span>
+          </div>
+        </div>
+        <div class="hbutton">
+          <div>
+            <h3>Change or cancel a trip</h3>
+            <p>Make updates to your itinerary or cancel a booking</p>
+          </div>
+          <div>
+            <span class="material-icons">forum</span>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
-
-<script>
-  document.querySelector(body);
-
-  document.querySelector()
+<script src="index.js">
 </script>

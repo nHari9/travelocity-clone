@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="paymentpage.css">
 </head>
 <body>
+    
             <header>
                 <nav>
                 <div id="leftNav">
@@ -55,10 +56,10 @@
         <div>
             <h2>Secure booking - only takes a few minutes!</h2>
         </div>
-        
+<!--         
         <div class="signin">
             <a href="Sigin.html">Sign in to book faster</a>
-        </div>
+        </div> -->
 
         <div class="div1">
             <label>Signed in as</label>
@@ -136,15 +137,25 @@
                <label for="dob">Date of birth*</label><br>
                <select name="Month" id="month">
                    <option value="">Month</option>
-                   <option value="">12</option>
+                   <option value="jan">Jan</option>
+                   <option value="feb">Feb</option>
+                   <option value="mar">Mar</option>
+                   <option value="apr">Apr</option>
+                   <option value="may">May</option>
+                   <option value="jun">Jun</option>
+                   <option value="jul">Jul</option>
+                   <option value="aug">Aug</option>
+                   <option value="sep">Sep</option>
+                   <option value="oct">Oct</option>
+                   <option value="nov">Nov</option>
+                   <option value="dec">Dec</option>
                </select>
-               <select name="" id="day">
+
+               <select  id="day">
                 <option value="">Day</option>
-                <option value="">12</option>
                </select>
-               <select name="" id="year">
+               <select id="year">
                 <option value="">Year</option>
-                <option value="">2021</option>
                </select><br>
                <h5>More options</h5>
            </div>
@@ -190,13 +201,12 @@
 
             <label>Expiration date*</label><br>
             <select id="expiremonth">
-                <option value="">Month</option>
-                <option value="">12</option>
+                <option value="">Month</option>  
             </select>
             <select id="expireyear">
                 <option value="">Year</option>
-                <option value="">2022</option>
             </select><br>
+
             <label>Security code*</label><br>
             <input type="number" id="cvv">
 
@@ -271,6 +281,8 @@
             <p>Company. All rights reserved.</p>
         </div>
     </footer>
+
+
 </body>
 </html>
 
