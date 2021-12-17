@@ -1,0 +1,357 @@
+
+      body {
+        padding: 0px 0px;
+        margin: 0px;
+        font-family: sans-serif;
+        background-color: #f0f3f5;
+      }
+      header {
+        width: 100%;
+        background-color: #0a438b;
+        height: 50px;
+        margin: 0px;
+        padding: 10px 0px;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+      }
+      #leftNav {
+        display: flex;
+      }
+      #leftNav > img {
+        margin-right: 20px;
+      }
+      #rightNav {
+        display: flex;
+        padding-top: 20px;
+      }
+      #rightNav > a {
+        margin-left: 20px;
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+      }
+      .material-icons {
+        margin-top: 15px;
+        color: #1f3366;
+      }
+      #dropDown {
+        position: relative;
+      }
+      #dropMenu {
+        position: absolute;
+        z-index: 10;
+        visibility: hidden;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        border-radius: 40px;
+        box-shadow: 5px 5px 20px #0a438b;
+      }
+      #dropDown > button {
+        width: 100px;
+        margin: 10px 0px;
+        background-color: transparent;
+        color: white;
+        border: none;
+      }
+      .anchor {
+        width: 250px;
+        padding: 10px 20px;
+      }
+      .anchor > a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+        display: block;
+      }
+      .anchor > a:hover {
+        text-decoration: none;
+        color: white;
+        background-color: #0a438b;
+        font-size: 20px;
+        font-weight: 600;
+      }
+      #container {
+        height: 80px;
+        width: 100%;
+        padding-top: 20px;
+        border: 2px solid transparent;
+        background-color: white;
+      }
+      #leavingdet {
+        display: flex;
+      }
+      .leavingfrom {
+        height: 50px;
+        width: 380px;
+        display: flex;
+        margin-top: 8px;
+        margin-left: 80px;
+        border: 3px solid transparent;
+        border-radius: 10px;
+        box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+          rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+      }
+      .leavingto {
+        height: 50px;
+        width: 380px;
+        display: flex;
+        margin-top: 8px;
+        margin-left: 10px;
+        border: 3px solid transparent;
+        border-radius: 10px;
+        box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+          rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+      }
+      .leavingto > p {
+        padding: 0px;
+        margin: 0px;
+        margin-left: 10px;
+      }
+      .leavingfrom > p {
+        padding: 0px;
+        margin: 0px;
+        margin-left: 10px;
+      }
+      #depart {
+        height: 50px;
+        width: 200px;
+        display: flex;
+        margin-top: 8px;
+        margin-left: 24px;
+        border: 3px solid transparent;
+        border-radius: 10px;
+        box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+          rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+      }
+      #depart > p {
+        padding: 0px;
+        margin: 0px;
+        margin-left: 10px;
+      }
+      .mainbody {
+        width: 100%;
+        height: 3000px;
+        border: 2px solid transparent;
+        display: flex;
+      }
+      .s1 {
+        height: 45px;
+        width: 120px;
+        color: white;
+        background-color: blue;
+        border-radius: 12px;
+        margin-top: 7px;
+        margin-left: 24px;
+        font-size: 20px;
+        font-weight: 700;
+        box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+          rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+      }
+      .s1:hover {
+        background-color: lightblue;
+      }
+      #para1 {
+        font-size: 16px;
+        margin-left: 30px;
+        margin-right: 500px;
+        margin-top: 30px;
+      }
+      .flight {
+        height: 120px;
+        width: 85%;
+        border: 2px solid transparent;
+        background-color: white;
+        border-radius: 12px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-right: 300px;
+      }
+      .flight > div:nth-child(1) {
+
+        border: 1px solid transparent;
+
+       
+
+        height: 100%;
+        width: 25%;
+        border-radius: 10px;
+      }
+      .flight > div:nth-child(1) > p {
+        font-size: 15px;
+        margin-left: 20px;
+      }
+      .flight > div:nth-child(1) > h3 {
+        margin-left: 20px;
+      }
+      .flight > div:nth-child(2) {
+        font-size: 28px;
+        font-weight: 800;
+        height: 100%;
+        width: 10%;
+
+        border: 2px solid transparent;
+
+
+
+      }
+      .rightbox {
+        height: 100%;
+        width: 75%;
+
+        border: 2px solid transparent;
+
+        
+
+      }
+      .leftbox {
+        height: 100%;
+        width: 24%;
+
+        border: 2px solid transparent;
+
+       
+
+      }
+      .sort {
+        height: 90px;
+        width: 22%;
+        display: flex;
+        border: 2px solid transparent;
+        border-radius: 12px;
+        margin-top: 10px;
+        box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+          rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+      }
+      #sort1 {
+        height: 99%;
+        width: 80%;
+        border: 2px solid transparent;
+      }
+      #sort1 > label {
+        font-size: 20px;
+        margin-left: 25px;
+      }
+      #sort1 > select {
+        height: 28px;
+        width: 109%;
+        margin: 20px;
+        border: none;
+        background-color: #f0f3f5;
+        font-size: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      #sort2 {
+        height: 70%;
+        width: 20%;
+        border: 2px solid transparent;
+      }
+      .parasort > div:nth-child(1) {
+        height: 40%;
+        width: 70%;
+        margin: 40px 23px;
+        border: 2px solid transparent;
+      }
+      .parasort {
+        width: 99%;
+        height: 130px;
+        display: flex;
+        justify-content: space-between;
+
+        border: 2px solid transparent;
+
+        
+
+      }
+      .filterbox {
+        height: 370px;
+        width: 76%;
+        margin-top: 20px;
+        margin-left: 40px;
+
+        border: 2px solid transparent;
+
+        
+
+      }
+      #filterstop {
+        height: 40%;
+        width: 100%;
+     border: 1px solid transparent;
+
+        
+
+      }
+      #filterairline {
+        height: 40%;
+        width: 100%;
+
+        border: 1px solid transparent;
+
+        
+
+      }
+      .title {
+        display: flex;
+        justify-content: space-between;
+      }
+      .values > div {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+      }
+      #departurebox {
+        height: 250px;
+        width: 80%;
+        margin: 20px 0px;
+        margin-left: 30px;
+
+        border: 2px solid transparent;
+
+        
+
+      }
+      .deparrcontainer {
+        display: grid;
+        grid-template-columns: repeat(2, 110px);
+        grid-template-rows: repeat(2, 80px);
+        grid-gap: 10px;
+        margin-top: 8px;
+        margin-left: 12px;
+        border: 2px solid transparent;
+        height: 180px;
+        width: 220px;
+      }
+      .deparrcontainer > div {
+        /* border: 2px solid black; */
+        border-radius: 12px;
+        background-color: white;
+      }
+      #departurebox > p {
+        font-weight: 800;
+        font-size: 16px;
+      }
+      #arrivalbox {
+        height: 250px;
+        width: 80%;
+        margin: 10px 0px;
+        margin-left: 30px;
+
+        border: 2px solid transparent;
+       
+
+      }
+      #arrivalbox > p {
+        font-weight: 800;
+        font-size: 16px;
+      }
+      div > h5 {
+        margin: 9px;
+      }
