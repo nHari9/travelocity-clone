@@ -80,7 +80,7 @@
       </header>
     <div class="signup">
 
-     <form>
+     <form id="form">
          <h1><b>Create an account</b></h1>
          <input type="email" id="email" placeholder="Email address"><br>
          <input type="text" id="fname" placeholder="Firstname"><br>
@@ -109,5 +109,29 @@
 <script>
     document.querySelector("#form");
 
+    document.querySelector("button").addEventListener("click",store);
+
+    var signupdetails=[];
+
+function store(event){
+    event.preventDefault();
+    var cerdentials={
+        mail: form.email.value,
+        fname: form.fname.value,
+        lname: form.lname.value,
+        pass: form.pass.value
+    }
+
+    signupdetails.push(cerdentials);
+
+    localStorage.setItem("usercred",JSON.stringify(signupdetails));
+}
+
+
+document.querySelector("button").addEventListener("click",gotomain);
+
+function gotomain(){
+    window.location.href="index.html"
+}
     
 </script>
