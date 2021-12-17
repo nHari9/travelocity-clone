@@ -137,8 +137,7 @@ function flightPage(event){
     return (el.cityFrom==from && el.cityTo==to && el.date==fdate);
   });
   localStorage.setItem("selectedRoute",JSON.stringify(selectedRoute));
-  console.log(from,to,fdate);
-  console.log(selectedRoute);
+  window.location.href = "flight-booking.html";
 }
 
 
