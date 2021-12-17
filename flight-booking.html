@@ -18,6 +18,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+
+    <link rel="stylesheet" href="flight-booking.css" />
     <link rel="stylesheet" href="flight-booking.css">
   </head>
   <body>
@@ -64,7 +66,12 @@
           <span class="material-icons" style="font-size: 35px; margin-top: 6px">
             location_on
           </span>
+
+          <p>Flying from</p>
+          <br />
+
           <p>Flying from</p><br>
+
           <h3></h3>
         </div>
         <span
@@ -199,12 +206,13 @@
 
           <div class="sort">
             <div id="sort1">
-              <label value="">Sort By</label>
-              <select id="pricesort">
-                <option value="">Price(Lowest)</option>
-                <option value="">Price(Highest)</option>
+              <select id="pricesort" onchange="priceSort()">
+                <option value="--">Sort by Price</option>
+                <option value="lh">Price(Lowest)</option>
+                <option value="hl">Price(Highest)</option>
               </select>
             </div>
+
             <div id="sort2">
               <span
                 class="material-icons"
@@ -222,12 +230,18 @@
           </div>
           <div>
             <p id="fPrice">$186</p>
+
           </div>
         </div>
+        <div id="flightsData"></div>
       </div>
     </div>
   </body>
 </html>
+
+<script src="flight-booking.js"></script>
+
 <script src="flight-booking.js">
   
 </script>
+
