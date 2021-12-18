@@ -92,7 +92,7 @@ nav {
   margin-top: 50px;
 }
 .dealCards {
-  height: 100%;
+  /* height: 100%; */
   border-radius: 10px;
   padding: 0px 0px;
   background-color: white;
@@ -373,4 +373,128 @@ footer p{
 #support:hover{
   background-color: #0a438b;
   color: white;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 375px) {
+  header{
+    height: 150px;
+  }
+
+  nav {
+    width: 100%;
+    flex-direction: column;
+  }
+  #guarantees {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);  
+    height: 600px;     
+  }
+  #deals {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    height: 550px;
+  }
+  #plansSec {
+    width: 100%;
+  }
+  #plans {
+    height: 500px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #offers {
+    width: 100%;
+    height: 250px;
+  }
+  #ytVideo {
+    width: 100%;
+    margin: 50px auto;
+    height: 200px;
+  }
+  #ytVideo > iframe {
+    height: 200px;
+  }
+  #help {
+    width: 100%;
+    height: 150px;
+  }
+  #helpButtons {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer{
+    width: 100%;
+    margin: 50px auto;
+  }
+  #links {
+    margin-top: 300px;
+    width: 100%;
+    flex-direction: column;
+  }
+  #centralPanel {
+    width: 100%;
+    margin: auto;
+    left: 0%;
+    height: 350px;
+  }
+  #searchPanel select {
+    width: 40%;
+  }
+  
+}
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+  header{
+    height: 150px;
+  }
+
+  nav {
+    width: 100%;
+    flex-direction: column;
+  }
+  #guarantees {
+    width: 80%;
+    grid-template-columns: repeat(1, 1fr);  
+    height: 450px;     
+  }
+  #deals {
+    width: 80%;
+    grid-template-columns: repeat(1, 1fr);
+    height: 550px;
+  }
+  #plansSec {
+    width: 80%;
+  }
+  #plans {
+    height: 400px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #offers {
+    width: 80%;
+    height: 300px;
+  }
+  #ytVideo {
+    width: 80%;
+    margin: 50px auto;
+    height: 200px;
+  }
+  #ytVideo > iframe {
+    height: 200px;
+  }
+  #help {
+    width: 70%;
+    height: 150px;
+  }
+  #helpButtons {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer{
+    width: 100%;
+    margin: 50px auto;
+  }
+  #links {
+    margin-top: 230px;
+    width: 100%;
+    flex-direction: column;
+  }
+
+
+  
 }
