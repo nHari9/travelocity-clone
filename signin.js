@@ -17,7 +17,4 @@ function goto(event){
             alert("please enter the correct details!!")
         }
     }
-    
-    
-    
-
+}
