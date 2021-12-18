@@ -12,7 +12,7 @@ function ticketdetails(){
     var paydetails={
         title: title.value,
         firstname: firstname.value,
-        middlename: middlename.value,
+        
         lastname: lastname.value,
         phone: phone.value,
         month: month.value,
@@ -23,21 +23,20 @@ function ticketdetails(){
         expiremonth:  expiremonth.value,
         expireyear: expireyear.value,
         cvv: cvv.value,
-        country: country.value,
-        address1: address1.value,
-        address2: address2.value,
-        city: city.value,
-        state: state.value,
-        zipcode: zipcode.value,
+    
     }
     
     paymentarr.push(paydetails);
     
-    // console.log(paymentarr);
+
 
     paymentarr.map(function(elem){
         if(elem.carddetails==""|| elem.expiremonth==""|| elem.expireyear==""||elem.cvv==""){
             alert("Please fill the card details");
+        }
+
+        else{
+            window.location.href="otpPage.html"
         }
     })
     
