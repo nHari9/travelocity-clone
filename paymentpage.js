@@ -1,6 +1,6 @@
 document.querySelector("body");
 
-
+// display();
 
 document.querySelector("#submit").addEventListener("click",ticketdetails);
 var paymentarr=[];
@@ -33,7 +33,7 @@ function ticketdetails(){
     
     paymentarr.push(paydetails);
     
-    console.log(paymentarr);
+    // console.log(paymentarr);
 
     paymentarr.map(function(elem){
         if(elem.carddetails==""|| elem.expiremonth==""|| elem.expireyear==""||elem.cvv==""){
@@ -104,3 +104,17 @@ function expiremonth(){
         }
 }
 }
+
+var details=JSON.parse(localStorage.getItem("finalPrice"))
+var roundtrip=document.querySelector(".roundtrip")
+    var p=document.createElement("h1");
+    p.textContent=details;
+    roundtrip.append(p);
+
+    var finalFlight = JSON.parse(localStorage.getItem("finalFlight"));
+
+    var roundtrip=document.querySelector(".roundtrip")
+    document.querySelector(".roundtrip>span").textContent=finalFlight.cityFrom+" to "+finalFlight.cityTo;
+
+    document.querySelector(".date").textContent =  finalFlight.date;
+    document.querySelector(".time").textContent =  finalFlight.fTime;
