@@ -1,331 +1,355 @@
 body {
-    padding: 0px 0px;
-    margin: 0px;
-    font-family: sans-serif;
-    background-color: #f0f3f5;
-  }
-  header {
-    width: 100%;
-    background-color: #0a438b;
-    height: 50px;
-    margin: 0px;
-    padding: 10px 0px;
-  }
-  nav {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: auto;
-  }
-  #leftNav {
-    display: flex;
-  }
-  #leftNav > img {
-    margin-right: 20px;
-  }
-  #rightNav {
-    display: flex;
-    padding-top: 20px;
-  }
-  #rightNav > a {
-    margin-left: 20px;
-    font-size: 15px;
-    color: white;
-    text-decoration: none;
-  }
+  padding: 0px 0px;
+  margin: 0px;
+  font-family: sans-serif;
+  background-color: #f0f3f5;
+}
+header {
+  width: 100%;
+  background-color: #0a438b;
+  height: 50px;
+  margin: 0px;
+  padding: 10px 0px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+#leftNav {
+  display: flex;
+}
+#leftNav > img {
+  margin-right: 20px;
+}
+#rightNav {
+  display: flex;
+  padding-top: 20px;
+}
+#rightNav > a {
+  margin-left: 20px;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+}
 
-  #fromTo {
-    background-image: url(https://forever.travel-assets.com/flex/flexmanager/images/2021/06/25/TVLY_SeizeYourSomeday_lpheroB_1680x945_20210623.jpg?impolicy=fcrop&w=1680&h=485&q=medium);
-    background-size: cover;
-    height: 480px;
-    position: relative;
-  }
-  #guarantees {
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    margin: 20px auto;
-    height: 250px;
-    background-color: #f0f3f5;
-    margin-top: 30px;
-  }
-  .gcards {
-    height: 100%;
-    border-radius: 10px;
-    padding: 0px 0px;
-    background-color: white;
-  }
-  .gcards > div:first-child {
-    height: 75%;
-    padding: 0px;
-    margin: 0px 0px;
-    margin-top: -20px;
-    border: transparent;
-    position: relative;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    box-shadow: inset 0px -30px 30px rgb(51, 51, 51);
-  }
+#fromTo {
+  background-image: url(https://forever.travel-assets.com/flex/flexmanager/images/2021/06/25/TVLY_SeizeYourSomeday_lpheroB_1680x945_20210623.jpg?impolicy=fcrop&w=1680&h=485&q=medium);
+  background-size: cover;
+  height: 480px;
+  position: relative;
+}
+#guarantees {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin: 20px auto;
+  height: 250px;
+  background-color: #f0f3f5;
+  margin-top: 30px;
+}
+.gcards {
+  height: 100%;
+  border-radius: 10px;
+  padding: 0px 0px;
+  background-color: white;
+}
+.gcards > div:first-child {
+  height: 75%;
+  padding: 0px;
+  margin: 0px 0px;
+  margin-top: -20px;
+  border: transparent;
+  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: inset 0px -30px 30px rgb(51, 51, 51);
+}
 
-  .gcards > div:first-child > h3 {
-    position: absolute;
-    bottom: 5px;
-    left: 10px;
-    color: white;
-    opacity: 1;
-    text-shadow: 10px 10px 10px black;
-  }
-  .gcards p {
-    margin: 20px 10px;
-    color: grey;
-    line-height: 16px;
-  }
-  #deals {
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    margin: 20px auto;
-    height: 250px;
-    background-color: #f0f3f5;
-    margin-top: 50px;
-  }
-  .dealCards {
-    height: 100%;
-    border-radius: 10px;
-    padding: 0px 0px;
-    background-color: white;
-    box-shadow: inset 60px -20px 150px rgb(51, 51, 51);
-    position: relative;
-  }
+.gcards > div:first-child > h3 {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  color: white;
+  opacity: 1;
+  text-shadow: 10px 10px 10px black;
+}
+.gcards p {
+  margin: 20px 10px;
+  color: grey;
+  line-height: 16px;
+}
+#deals {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin: 20px auto;
+  height: 250px;
+  background-color: #f0f3f5;
+  margin-top: 50px;
+}
+.dealCards {
+  height: 100%;
+  border-radius: 10px;
+  padding: 0px 0px;
+  background-color: white;
+  box-shadow: inset 60px -20px 150px rgb(51, 51, 51);
+  position: relative;
+}
 
-  h2 {
-    margin: 0px;
-  }
-  .dealCardText {
-    width: 50%;
-    margin-left: 30px;
-    color: white;
-    position: absolute;
-    top: 25%;
-    left: 10px;
-  }
-  .dealCardText > button {
-    color: rgb(13, 90, 185);
-    padding: 10px 20px;
-    border: 2px solid rgb(13, 90, 185);
-    border-radius: 10px;
-    font-weight: 700;
-  }
-  .dealCardText > button:hover {
-    background-color: rgb(211, 238, 241);
-    font-weight: 900;
-  }
+h2 {
+  margin: 0px;
+}
+.dealCardText {
+  width: 50%;
+  margin-left: 30px;
+  color: white;
+  position: absolute;
+  top: 25%;
+  left: 10px;
+}
+.dealCardText > button {
+  color: rgb(13, 90, 185);
+  padding: 10px 20px;
+  border: 2px solid rgb(13, 90, 185);
+  border-radius: 10px;
+  font-weight: 700;
+}
+.dealCardText > button:hover {
+  background-color: rgb(211, 238, 241);
+  font-weight: 900;
+}
 
-  /* Plans */
-  #plansSec {
-    width: 80%;
-    margin: 70px auto;
-  }
-  h1 {
-    margin: 5px;
-    font-size: 30px;
-  }
-  #plans {
-    height: 220px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-  }
-  .plansCards {
-    border-radius: 10px;
-    color: white;
-    position: relative;
-    box-shadow: inset 0px -50px 60px rgb(51, 51, 51);
-  }
-  .plansCards h2 {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-  }
+/* Plans */
+#plansSec {
+  width: 80%;
+  margin: 70px auto;
+}
+h1 {
+  margin: 5px;
+  font-size: 30px;
+}
+#plans {
+  height: 220px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+.plansCards {
+  border-radius: 10px;
+  color: white;
+  position: relative;
+  box-shadow: inset 0px -50px 60px rgb(51, 51, 51);
+}
+.plansCards h2 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
 
-  /* offers */
-  #offers {
-    width: 80%;
-    height: 350px;
-    margin: auto;
-  }
-  #offerbg {
-    width: 100%;
-    height: 80%;
-    position: relative;
-    border-radius: 10px;
-    color: white;
-    box-shadow: inset 40px -30px 100px rgb(51, 51, 51);
-  }
-  #offerbg h3 {
-    position: absolute;
-    bottom: 20px;
-    left: 0px;
-  }
-  #offerbg p {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-  }
-  #ytVideo {
-    width: 80%;
-    margin: 50px auto;
-    height: 420px;
-    border-radius: 10px;
-  }
-  #ytVideo > iframe {
-    margin: 0px auto;
-    border-radius: 10px;
-  }
-  #help {
-    width: 80%;
-    margin: 30px auto;
-    height: 150px;
-  }
-  #helpButtons {
-    height: 50%;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .hbutton {
-    border: 1px solid grey;
-    border-radius: 10px;
-    display: flex;
-    padding-left: 10px;
-    background-color: white;
-  }
+/* offers */
+#offers {
+  width: 80%;
+  height: 350px;
+  margin: auto;
+}
+#offerbg {
+  width: 100%;
+  height: 80%;
+  position: relative;
+  border-radius: 10px;
+  color: white;
+  box-shadow: inset 40px -30px 100px rgb(51, 51, 51);
+}
+#offerbg h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+}
+#offerbg p {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+#ytVideo {
+  width: 80%;
+  margin: 50px auto;
+  height: 420px;
+  border-radius: 10px;
+}
+#ytVideo > iframe {
+  width: 100%;
+  margin: 0px auto;
+  border-radius: 10px;
+}
+#help {
+  width: 80%;
+  margin: 30px auto;
+  height: 150px;
+}
+#helpButtons {
+  height: 50%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.hbutton {
+  border: 1px solid grey;
+  border-radius: 10px;
+  display: flex;
+  padding-left: 10px;
+  background-color: white;
+}
 
-  .hbutton > div:first-child {
-    width: 90%;
-  }
-  .hbutton p {
-    font-size: 12px;
-    color: rgb(85, 85, 85);
-  }
-  .material-icons {
-    margin-top: 15px;
-    color: #1f3366;
-  }
-  #dropDown {
-    position: relative;
-  }
-  #dropMenu {
-    position: absolute;
-    z-index: 10;
-    visibility: hidden;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    border-radius: 40px;
-    box-shadow: 5px 5px 20px #0a438b;
-  }
-  #dropDown > button {
-    width: 100px;
-    margin: 10px 0px;
-    background-color: transparent;
-    color: white;
-    border: none;
-  }
-  .anchor {
-    width: 250px;
-    padding: 10px 20px;
-  }
-  .anchor > a {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    font-weight: 600;
-    display: block;
-  }
-  .anchor > a:hover {
-    text-decoration: none;
-    color: white;
-    background-color: #0a438b;
-    font-size: 20px;
-    font-weight: 600;
-  }
-  #centralPanel {
-    width: 80%;
-    margin: auto;
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    height: 350px;
-    border-radius: 20px;
-    background-color: white;
-    box-shadow: 5px 5px 50px grey;
-  }
-  #searchNav {
-    margin: auto;
-    text-align: center;
-  }
-  #searchNav > button {
-    color: grey;
-    padding: 10px 20px;
-    font-size: 20px;
-    text-decoration: none;
-    background-color: transparent;
-    border: none;
-  }
-  #searchNav > button:hover {
-    color: white;
-    background-color: #0a438b;
-    border-radius: 30px;
-  }
-  #searchNav > button:active {
-    color: white;
-    background-color: #496d99;
-    font-size: 15px;
-    border-radius: 30px;
-  }
-  
-  #searchPanel input {
-    margin: 10px auto;
-    padding: 5px;
-    border: 1px solid grey;
-    border-radius: 20px;
-  }
-  #searchPanel input:active {
-    border: 5px solid #0a438b;
-  }
-  #searchPanel select {
-    width: 20%;
-    margin: 10px auto;
-    padding: 5px;
-    border: 1px solid grey;
-    border-radius: 20px;
-  }
-  #searchPanel button {
-    border-radius: 20px;
-    border: none;
-    background-color: #0a438b;
-    color: white;
-    padding: 10px 20px;
-    font-size: 20px;
-    font-weight: 700;
-  }
-  #searchPanel button:active {
-    background-color: #405e83;
-    color: white;
-    font-size: 18px;
-    font-weight: 600;
-  }
-  #searchPanel h1 {
-    color: #1f3366;
-  }
+.hbutton > div:first-child {
+  width: 90%;
+}
+.hbutton p {
+  font-size: 12px;
+  color: rgb(85, 85, 85);
+}
+.material-icons {
+  margin-top: 15px;
+  color: #1f3366;
+}
+#dropDown {
+  position: relative;
+}
+#dropMenu {
+  position: absolute;
+  z-index: 10;
+  visibility: hidden;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px;
+  box-shadow: 5px 5px 20px #0a438b;
+}
+#dropDown > button {
+  width: 100px;
+  margin: 10px 0px;
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+.anchor {
+  width: 250px;
+  padding: 10px 20px;
+}
+.anchor > a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  display: block;
+}
+.anchor > a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #0a438b;
+  font-size: 20px;
+  font-weight: 600;
+}
+#centralPanel {
+  width: 80%;
+  margin: auto;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  height: 350px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 5px 5px 50px grey;
+}
+#searchNav {
+  margin: auto;
+  text-align: center;
+}
+#searchNav > button {
+  color: grey;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+}
+#searchNav > button:hover {
+  color: white;
+  background-color: #0a438b;
+  border-radius: 30px;
+}
+#searchNav > button:active {
+  color: white;
+  background-color: #496d99;
+  font-size: 15px;
+  border-radius: 30px;
+}
 
-  #flightForm {
-    display: none;
+#searchPanel input {
+  margin: 10px auto;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 20px;
+}
+#searchPanel input:active {
+  border: 5px solid #0a438b;
+}
+#searchPanel select {
+  width: 20%;
+  margin: 10px auto;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 20px;
+}
+#searchPanel button {
+  border-radius: 20px;
+  border: none;
+  background-color: #0a438b;
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+#searchPanel button:active {
+  background-color: #405e83;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+#searchPanel h1 {
+  color: #1f3366;
+}
 
-  }
-  #stayForm {
-    display: block;
-  }
+#flightForm {
+  display: block;
+}
+#stayForm {
+  display: none;
+}
+
+/* footer */
+footer{
+  width: 80%;
+  margin: auto;
+}
+#links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer>div a{
+text-decoration: none;
+color: #0a438b;
+}
+footer>div li{
+text-decoration: none;
+list-style-type:none;
+margin: 20px 0px;
+}
+footer p{
+  text-align: center;
+  margin-bottom: 50px;
+}

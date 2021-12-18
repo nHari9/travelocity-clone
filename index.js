@@ -1,4 +1,4 @@
-var flightData = [
+var flightData = [ 
     // 1 Jan
     //From Delhi
 {cityFrom:"Delhi",cityTo:"Bangalore",date:"1 Jan",fTime:"11 AM",dur:"3",fPrice:"5000"},
@@ -133,9 +133,14 @@ function flightPage(event){
   var to = document.querySelector('#toCity').value;
   var fdate = document.querySelector('#fDate').value;
 
+  if(from == "--" || to=="--" || fdate=="--"){
+    return alert('Enter Complete Information');
+  }
+
   var selectedRoute = flightData.filter(function(el){
     return (el.cityFrom==from && el.cityTo==to && el.date==fdate);
   });
+
   localStorage.setItem("selectedRoute",JSON.stringify(selectedRoute));
   window.location.href = "flight-booking.html";
 }
