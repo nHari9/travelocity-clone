@@ -107,7 +107,7 @@ function expiremonth(){
 var details=JSON.parse(localStorage.getItem("finalPrice"))
 var roundtrip=document.querySelector(".roundtrip")
     var p=document.createElement("h1");
-    p.textContent=details;
+    p.textContent="₹"+details;
     roundtrip.append(p);
 
     var finalFlight = JSON.parse(localStorage.getItem("finalFlight"));
@@ -117,3 +117,4 @@ var roundtrip=document.querySelector(".roundtrip")
 
     document.querySelector(".date").textContent =  finalFlight.date;
     document.querySelector(".time").textContent =  finalFlight.fTime;
+    document.querySelector(".duration").textContent =  finalFlight.dur+" Hours";

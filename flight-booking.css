@@ -134,8 +134,8 @@
         margin-left: 10px;
       }
       .mainbody {
-        width: 100%;
-        height: 3000px;
+        width: 80%;
+        margin: auto;
         border: 2px solid transparent;
         display: flex;
       }
@@ -162,7 +162,8 @@
       }
       .flight {
         height: 120px;
-        width: 85%;
+        width: 100%;
+        padding: 20px;
         border: 2px solid transparent;
         background-color: white;
         border-radius: 12px;
@@ -202,21 +203,13 @@
       }
       .rightbox {
         height: 100%;
-        width: 75%;
-
+       width: 75%;
         border: 2px solid transparent;
-
-        
-
       }
       .leftbox {
         height: 100%;
         width: 24%;
-
         border: 2px solid transparent;
-
-       
-
       }
       .sort {
         height: 90px;
@@ -353,4 +346,34 @@
       div > h5 {
         margin: 9px;
       }
+      .flight:hover{
+        border: 2px solid #1f3366;
+      }
+
+
+/* footer css */
+
+      footer{
+        width: 80%;
+        margin: auto;
+      }
+      #links {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      footer>div a{
+      text-decoration: none;
+      color: #0a438b;
+      }
+      footer>div li{
+      text-decoration: none;
+      list-style-type:none;
+      margin: 20px 0px;
+      }
+      footer p{
+        text-align: center;
+        margin-bottom: 50px;
+      }
+     
 

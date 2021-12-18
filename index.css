@@ -259,10 +259,15 @@ h1 {
   position: absolute;
   top: 10%;
   left: 10%;
-  height: 350px;
+  height: 250px;
   border-radius: 20px;
   background-color: white;
   box-shadow: 5px 5px 50px grey;
+  opacity: 0.8;
+}
+#centralPanel:hover{
+  opacity: 1;
+
 }
 #searchNav {
   margin: auto;
@@ -314,7 +319,7 @@ h1 {
   font-weight: 700;
 }
 #searchPanel button:active {
-  background-color: #405e83;
+  background-color: #405e83; 
   color: white;
   font-size: 18px;
   font-weight: 600;
@@ -352,4 +357,20 @@ margin: 20px 0px;
 footer p{
   text-align: center;
   margin-bottom: 50px;
+}
+
+#support{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 90px;
+  border: none;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px grey;
+  color: #0a438b;
+}
+#support:hover{
+  background-color: #0a438b;
+  color: white;
 }

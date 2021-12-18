@@ -13,8 +13,12 @@ var selectedFlights = JSON.parse(localStorage.getItem("selectedRoute"));
 displayFlights(selectedFlights);
 
 function displayFlights(selectedFlights) {
+  
   document.querySelector("#flightsData").innerHTML = "";
   selectedFlights.map(function (el, index) {
+    document.querySelector('.leavingfrom>h3').textContent = el.cityFrom;
+    document.querySelector('.leavingto>h3').textContent = el.cityTo;
+    document.querySelector('#depart>h3').textContent = el.date;
     var flightDiv = document.createElement("div");
     flightDiv.setAttribute("class", "flight");
     document.querySelector("#flightsData").append(flightDiv);

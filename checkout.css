@@ -5,7 +5,7 @@
     font-family: sans-serif;
     background-color: #f0f3f5;
   }
-  header {
+  header { 
     width: 100%;
     background-color: #0a438b;
     height: 50px;
@@ -79,7 +79,7 @@
         width: 80%;
         margin: auto;
         /* border: 1px solid black; */
-        height: 1000px;
+        height: 1100px;
        
         /* grid-template-columns: repeat(2,1fr); */
       }
@@ -339,4 +339,27 @@
       height: 60px;
       padding: 10px;
     }
-    
+
+    /* footer css */
+    footer{
+      width: 80%;
+      margin: auto;
+    }
+    #links {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    footer>div a{
+    text-decoration: none;
+    color: #0a438b;
+    }
+    footer>div li{
+    text-decoration: none;
+    list-style-type:none;
+    margin: 20px 0px;
+    }
+    footer p{
+      text-align: center;
+      margin-bottom: 50px;
+    }

@@ -27,5 +27,5 @@ var count = 0;
    document.querySelector(".button>p:first-child").textContent =  "₹"+finalFlight.fPrice+" x "+selected+ " Passenger";
    var finalPrice = finalFlight.fPrice*selected;
    localStorage.setItem('finalPrice',JSON.stringify(finalPrice));
-   document.querySelector("#finalPrice").textContent =  "₹"+finalFlight.fPrice*selected;
+   document.querySelector("#finalPrice").textContent =  "₹"+finalFlight.fPrice*selected; 
   }
