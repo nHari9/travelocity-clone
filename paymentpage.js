@@ -3,42 +3,37 @@ document.querySelector("body");
 // display();
 
 document.querySelector("#submit").addEventListener("click",ticketdetails);
-var paymentarr=[];
 
 
 function ticketdetails(){
 
-    
     var paydetails={
-        title: title.value,
-        firstname: firstname.value,
+        title: document.querySelector("#title").value,
+        firstname: document.querySelector("#firstname").value,
         
-        lastname: lastname.value,
-        phone: phone.value,
-        month: month.value,
-        day: day.value,
-        year: year.value,
-        nameoncard: nameoncard.value,
-        carddetails: carddetails.value,
-        expiremonth:  expiremonth.value,
-        expireyear: expireyear.value,
-        cvv: cvv.value,
+        lastname: document.querySelector("#lastname").value,
+        phone: document.querySelector("#phone").value,
+        month: document.querySelector("#month").value,
+        day: document.querySelector("#day").value,
+        year:  document.querySelector("#year").value,
+        nameoncard: document.querySelector("#nameoncard").value,
+        carddetails: document.querySelector("#carddetails").value,
+        expiremonth:  document.querySelector("#expiremonth").value,
+        expireyear: document.querySelector("#expireyear").value,
+        cvv: document.querySelector("#cvv").value,
     
     }
-    
-    paymentarr.push(paydetails);
-    
+     
+    localStorage.setItem("PassPay",JSON.stringify(paydetails));
 
-
-    paymentarr.map(function(elem){
-        if(elem.carddetails==""|| elem.expiremonth==""|| elem.expireyear==""||elem.cvv==""){
+        if(paydetails.carddetails==""|| paydetails.expiremonth==""|| paydetails.expireyear==""||paydetails.cvv==""){
             alert("Please fill the card details");
         }
 
         else{
             window.location.href="otpPage.html"
         }
-    })
+    
     
 }
 
@@ -106,9 +101,11 @@ function expiremonth(){
 
 var details=JSON.parse(localStorage.getItem("finalPrice"))
 var roundtrip=document.querySelector(".roundtrip")
+var pn = document.createElement("h4");
+pn.textContent = JSON.parse(localStorage.getItem("PassNum")) +" Passengers";
     var p=document.createElement("h1");
     p.textContent="₹"+details;
-    roundtrip.append(p);
+    roundtrip.append(pn,p);
 
     var finalFlight = JSON.parse(localStorage.getItem("finalFlight"));
 
@@ -118,3 +115,4 @@ var roundtrip=document.querySelector(".roundtrip")
     document.querySelector(".date").textContent =  finalFlight.date;
     document.querySelector(".time").textContent =  finalFlight.fTime;
     document.querySelector(".duration").textContent =  finalFlight.dur+" Hours";
+    document.querySelector(".perTicket").textContent =  "₹"+finalFlight.fPrice;

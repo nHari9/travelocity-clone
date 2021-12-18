@@ -164,6 +164,10 @@ body {
   }
   #submit{
       background-color: #80b301;
+      border: 2px solid black;
+      border-radius: 5px;
+      font-size: large;
+      padding: 20px;
   }
 
   .footer p,h4{
