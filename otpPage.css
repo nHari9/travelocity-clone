@@ -1,0 +1,31 @@
+#otpForm{
+    margin:auto;
+    text-align: center;
+}
+ .otpPara{
+    width:400px;
+    background:yellow;
+    height:40px;
+    margin:auto;
+    border-radius:10px;
+    padding-top:10px;
+    font-size:1.3em;
+    border:1px solid black;
+}
+input[type="number"]{
+    background:none;
+}
+#otpForm input[type="submit"]{
+    height:40px;
+    width:400px;
+    margin-top:30px;
+    border-radius:10px;
+    font-size:1.3em;
+    background:teal;
+    color:white;
+}
+#otpLabel{
+    margin-top:10px;
+    font-size:1.3em;
+
+}
