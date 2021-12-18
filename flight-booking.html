@@ -1,0 +1,247 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      type="image/x-icon"
+      href="https://www.travelocity.com/favicon.ico"
+      sizes="16x16 32x32"
+      rel="shortcut icon"
+    />
+    <title>
+      Wander Wisely with Cheap Hotels, Flights, Vacations & Travel Deals |
+      Travelocity
+    </title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <link rel="stylesheet" href="flight-booking.css" />
+    <link rel="stylesheet" href="flight-booking.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="leftNav">
+          <img
+            src="https://www.travelocity.com/_dms/header/logo.svg?locale=en_US&amp;siteid=80001&amp;2"
+            alt="travelocity"
+          />
+          <div id="dropDown">
+            <button onclick="dropMenu()"><p>More Travel</p></button>
+            <div id="dropMenu">
+              <div class="anchor"><a href="">Packages</a></div>
+              <div class="anchor"><a href="">Stays</a></div>
+              <div class="anchor"><a href="">Cars</a></div>
+              <div class="anchor"><a href="">Flights</a></div>
+              <div class="anchor"><a href="">Cruises</a></div>
+              <div class="anchor"><a href="">Things to do</a></div>
+              <div class="anchor"><a href="">Tips for me</a></div>
+              <div class="anchor"><a href="">Discover</a></div>
+              <div class="anchor"><a href="">Travel Deals</a></div>
+            </div>
+          </div>
+          <div onclick="dropMenu()">
+            <span class="material-icons" style="color: white; margin-top: 20px"
+              >expand_more</span
+            >
+          </div>
+        </div>
+        <div id="rightNav">
+          <a href="#">Espanol</a>
+          <a href="#">List your property</a>
+          <a href="#">Support</a>
+          <a href="#">Support</a>
+          <a href="#">Sign in</a>
+        </div>
+      </nav>
+    </header>
+
+    <div id="container">
+      <div id="leavingdet">
+        <div class="leavingfrom">
+          <span class="material-icons" style="font-size: 35px; margin-top: 6px">
+            location_on
+          </span>
+
+          <p>Flying from</p>
+          <br />
+
+          <p>Flying from</p><br>
+
+          <h3></h3>
+        </div>
+        <span
+          class="material-icons"
+          style="font-size: 38px; margin-left: 15px; margin-top: 14px"
+        >
+          arrow_forward
+        </span>
+        <div class="leavingto">
+          <span class="material-icons" style="font-size: 35px; margin-top: 6px">
+            location_on
+          </span>
+          <p>Flying to</p>
+          <h3></h3>
+        </div>
+        <div id="depart">
+          <span class="material-icons" style="font-size: 32px; margin-top: 6px">
+            today
+          </span>
+          <p>Departing</p>
+          <h3></h3>
+        </div>
+
+        <button class="s1">SEARCH</button>
+      </div>
+    </div>
+
+    <!-- mainbody -->
+
+    <div class="mainbody">
+      <!-- leftmainbox -->
+      <div class="leftbox">
+        <div class="filterbox">
+          <h3>Filter By</h3>
+          <!-- stop -->
+          <div id="filterstop">
+            <div class="title">
+              <h4>Stops</h4>
+              <h4>From</h4>
+            </div>
+            <div class="values">
+              <div>
+                <div>
+                  <input type="checkbox" style="cursor: pointer" ; />
+                  <label value="">NonStop</label>
+                </div>
+                <div>$371</div>
+              </div>
+              <div>
+                <div>
+                  <input type="checkbox" style="cursor: pointer" ; />
+                  <label value="">Stop</label>
+                </div>
+                <div>$186</div>
+              </div>
+            </div>
+          </div>
+          <div id="filterairline">
+            <div class="title">
+              <h4>Airlines</h4>
+              <h4>From</h4>
+            </div>
+            <div class="values">
+              <div>
+                <div>
+                  <input type="checkbox" style="cursor: pointer" ; />
+                  <label value="">GoFirst</label>
+                </div>
+                <div>$266</div>
+              </div>
+              <div>
+                <div>
+                  <input type="checkbox" style="cursor: pointer" ; />
+                  <label value="">Hahn Airline System</label>
+                </div>
+                <div>$86</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="departurebox">
+          <p>Departure Time</p>
+          <div class="deparrcontainer">
+            <div>
+              <h5>Early Morning</h5>
+              <h5>(12.00am - 4.59am</h5>
+            </div>
+            <div>
+              <h5>Morning</h5>
+              <h5>(5.00am - 11.59am)</h5>
+            </div>
+            <div>
+              <h5>Afternoon</h5>
+              <h5>(12.00pm-5.59pm)</h5>
+            </div>
+            <div>
+              <h5>Evening</h5>
+              <h5>(6.00pm - 11.59pm)</h5>
+            </div>
+          </div>
+        </div>
+        <div id="arrivalbox">
+          <p>Arrival Time</p>
+          <div class="deparrcontainer">
+            <div>
+              <h5>Early Morning</h5>
+              <h5>(12.00am - 4.59am</h5>
+            </div>
+            <div>
+              <h5>Afternoon</h5>
+              <h5>(12.00pm-5.59pm)</h5>
+            </div>
+            <div>
+              <h5>Afternoon</h5>
+              <h5>(12.00pm-5.59pm)</h5>
+            </div>
+            <div>
+              <h5>Evening</h5>
+              <h5>(6.00pm - 11.59pm)</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- rightmainbox -->
+      <div class="rightbox">
+        <div class="parasort">
+          <div>
+            Prices displayed include taxes and may change based on availability.
+            You can review any additional fees before checkout. Prices are not
+            final until you complete your purchase.
+          </div>
+
+          <div class="sort">
+            <div id="sort1">
+              <select id="pricesort" onchange="priceSort()">
+                <option value="--">Sort by Price</option>
+                <option value="lh">Price(Lowest)</option>
+                <option value="hl">Price(Highest)</option>
+              </select>
+            </div>
+
+            <div id="sort2">
+              <span
+                class="material-icons"
+                style="font-size: 40px; margin-top: 37px"
+              >
+                expand_more
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="flight">
+          <div>
+            <h3 id="depTime">time</h3>
+            <p id="cities">cities</p>
+          </div>
+          <div>
+            <p id="fPrice">$186</p>
+
+          </div>
+        </div>
+        <div id="flightsData"></div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="flight-booking.js"></script>
+
+<script src="flight-booking.js">
+  
+</script>
+

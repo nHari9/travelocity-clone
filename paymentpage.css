@@ -1,11 +1,10 @@
 body {
     padding: 0px 0px;
     margin: 0px;
-    font-family: sans-serif;
+    font-family: 'Segoe UI';
     background-color: #f0f3f5;
     font-size: 13px;
   }
-
 
   header {
     width: 100%;
@@ -178,3 +177,6 @@ body {
       text-decoration: underline;
       cursor: pointer;
   }
+
+
+  

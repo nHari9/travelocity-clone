@@ -2,6 +2,11 @@ header img{
     margin-left: 40%;
     height: 30px;
   }
+
+  *{
+    font-family: 'Segoe UI';
+}
+
 .signin{
     width: 400px;
     height: 600px;

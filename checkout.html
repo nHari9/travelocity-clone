@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="image/x-icon" href="https://www.travelocity.com/favicon.ico" sizes="16x16 32x32" rel="shortcut icon">
+    <title>
+        CheckOut
+    </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+      body {
+    padding: 0px 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: #f0f3f5;
+  }
+  header {
+    width: 100%;
+    background-color: #0a438b;
+    height: 50px;
+    margin: 0px;
+    padding: 10px 0px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+  }
+  #leftNav {
+    display: flex;
+  }
+  #leftNav > img {
+    margin-right: 20px;
+  }
+  #rightNav {
+    display: flex;
+    padding-top: 20px;
+  }
+  #rightNav > a {
+    margin-left: 20px;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+  }
+  #dropDown {
+    position: relative;
+  }
+  #dropMenu {
+    position: absolute;
+    z-index: 10;
+    visibility: hidden;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    box-shadow: 5px 5px 20px #0a438b;
+  }
+  #dropDown > button {
+    width: 100px;
+    margin: 10px 0px;
+    background-color: transparent;
+    color: white;
+    border: none;
+  }
+  .anchor {
+    width: 250px;
+    padding: 10px 20px;
+  }
+  .anchor > a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+  }
+  .anchor > a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #0a438b;
+    font-size: 20px;
+    font-weight: 600;
+  }
+      #detailssetion{
+          background-color: #f0f3f5;
+          display: flex;
+        margin-top: 10%;
+        width: 80%;
+        margin: auto;
+        /* border: 1px solid black; */
+        height: 1000px;
+       
+        /* grid-template-columns: repeat(2,1fr); */
+      }
+      .leftdiv{
+          margin-top: 50px;
+        
+        height: 100px;
+        width: 60%;
+        /* border: 1px solid red; */
+    
+      }
+      .leftdiv > :first-child{
+          margin-bottom: 10px;
+          width:100%;
+          color: gray;
+          margin-left: 0px;
+          grid-gap: -10px;
+          display:flex;
+          flex-direction: column(4,1fr);
+          /* grid-template-columns:repeat(4,1fr); */
+      }
+      .material-icons{
+          width: 30px;
+      }
+      .checkCovid{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          height: 90px;
+        border-radius: 10px;
+        width: 100%;
+        font-weight: normal;
+       
+          background-color: #505c66;
+          /* border: 1px solid green; */
+          color:#ffffff;
+          display: flex;
+          /* grid-template-columns: repeat(2,1fr); */
+          
+      }
+      .crossIcon{
+          
+          padding: 10px;
+          margin-left: 10px;
+        /* border:1px solid blue; */
+        width: 10%;
+        padding-left: 10px;
+        width: 6%;
+      }
+      .textcheck {
+          width: 60px;
+          padding: 10px;
+          line-height: 10px;
+          width: 100%;
+        /* border: 1px solid gold; */
+        text-decoration: none;
+        color:#ffffff ;
+      }
+      .textcheck>a{
+          color: #ffffff;
+      }
+      .stayFlaxible{
+          margin-top: 20px;
+          width: 100%;
+          /* border: 1 px solid yellow */
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          
+          height: 80px;
+      }
+    
+     .stayflaxibleclass{
+         line-height: 10px;
+         margin-top: 10px;
+      display: flex;
+      line-height:0.5px;
+      background-color: #ffffff;
+      height: 100px;
+      border-radius: 15px;
+   
+     }
+     .stayHometext{
+        /* border: 1px solid orange;  */
+        padding: 7px;
+        width: 90%;
+        margin-left: 20px;
+       color: black;
+       text-decoration: n;
+       line-height: 10px;
+     }
+     .stayHometext > P{
+         color: gray;
+     }
+     .stayHometext > a{
+         color:#0d5ab9;
+         font-size: 14px;
+         text-decoration: none;
+         
+     }
+     .stayHomeimage{
+         margin-left: 10px;
+         padding: 9px;
+         margin-top: 10px;
+         width: 6%;
+         /* border: 1px solid steelblue; */
+
+     }
+     .plansection{
+
+         background-color: #ffffff;
+         /* border: 1px solid hotpink; */
+         margin: auto;
+         border-radius: 10px;
+         margin-top: 50px;
+         height: 700px;
+         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+     }
+     .flitimg{
+         display: flex;
+         width: 100%;
+         height: 40px;
+         /* border: 1px solid aqua; */
+     }
+     .fimage{
+         margin-top: 10px;
+         width:5%;
+         height: 100px;
+        
+     }
+     .fimage > image{   
+        height: 100px;
+        width: 100px;
+
+     }
+     .fclass{
+         display: flex;
+         width: 90%;
+         height: 40px;
+         /* border: 1px solid maroon; */
+     }
+     .fclass>p{
+         color: gray;
+     }
+     .sorceTodes{
+        margin-left: 10px;
+     }
+     .sorceTodes > h1{
+        font-family:Arial, Helvetica, sans-serif;
+     }
+     .flitTime{
+         line-height:4px;
+         margin-top: 50px;
+        width: 100%;
+        height: 60px;
+       
+      
+     }
+     .flitTime> p{
+         color: gray;
+     }
+     .flitTime> a{
+         color: #0d5ab9;
+         font-size: 14px;
+         text-decoration: none;
+     }
+     .flitTime > hr {
+
+         margin-bottom:10px;
+     }
+     .Estimatedclass{
+         margin-top: 60px;
+         height: 70px;
+     }
+     .Estimatedcost{
+      color: gray;
+         display: grid;
+         grid-template-columns: repeat(2,1fr);
+         height: 150px;
+         width: 100%;
+     }
+     .estimatetext{
+         margin-top: 20px;
+         margin-top: 10px;
+         color: gray;
+         font-size: 13px;
+         width: 80%;
+     }
+     .estimatetext2{
+         margin-top: 20px;
+         margin-top: 10px;
+         color: gray;
+         font-size: 13px;
+         width: 80%;
+     }
+     .estimatetext>span>span>{
+         padding-top: 20px;
+        color: blue;
+     }
+      .txtdiv>:last-child{
+        color: black;
+       }
+     .lastDiv{
+       margin-top: 250px;
+     }
+     
+     .rightdiv{
+       background-color: #ffffff;
+        margin-top: 100px;
+         margin-left: 55px;
+         margin-right: 20px;
+        width: 40%;
+         /* border: 1px solid  royalblue; */
+         border-radius: 10px;
+        height: 420px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+     }
+     .checkout{
+       /* border:1px solid red; */
+       width: 90%;
+       margin-left: 20px;
+      
+     }
+.tr{
+     color: black;
+   }
+  
+     .tr1{
+       color: grey;
+     }
+      .tr2{
+        color: grey;
+      }
+     .tabletop{
+      /* border: 1px solid yellow; */
+       width: 100%;
+       height: 100px;
+     }
+     .checkout2{
+       /* border:1px solid red; */
+       width: 90%;
+       margin-left: 20px;
+       color: black;
+
+     }
+     .table2{
+       width: 100%;
+       height: 60px;
+       /* border: 1px solid hotpink; */
+     }
+    #text{
+      font-size: 15px;
+      color: grey;
+    }
+    #checkoutBtn{
+      background-color: #0d5ab9;
+      border-radius: 10px;
+      font-size: 20px;
+      width: 100%;
+      color:#ffffff;
+      height: 60px;
+      padding: 10px;
+    }
+    
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="leftNav">
+          <img
+            src="https://www.travelocity.com/_dms/header/logo.svg?locale=en_US&amp;siteid=80001&amp;2"
+            alt="travelocity"
+          />
+          <div id="dropDown">
+            <button onclick="dropMenu()"><p>More Travel</p></button>
+            <div id="dropMenu">
+              <div class="anchor"><a href="">Packages</a></div>
+              <div class="anchor"><a href="">Stays</a></div>
+              <div class="anchor"><a href="">Cars</a></div>
+              <div class="anchor"><a href="">Flights</a></div>
+              <div class="anchor"><a href="">Cruises</a></div>
+              <div class="anchor"><a href="">Things to do</a></div>
+              <div class="anchor"><a href="">Tips for me</a></div>
+              <div class="anchor"><a href="">Discover</a></div>
+              <div class="anchor"><a href="">Travel Deals</a></div>
+            </div>
+          </div>
+          <div onclick="dropMenu()">
+            <span class="material-icons" style="color: white; margin-top: 20px"
+              >expand_more</span
+            >
+          </div>
+        </div>
+        <div id="rightNav">
+          <a href="#">Espanol</a>
+          <a href="#">List your property</a>
+          <a href="#">Support</a>
+          <a href="#">Support</a>
+          <a href="signin.html" id="signinText">Sign in</a>
+        </div>
+      </nav>
+    </header>
+
+    
+    <section id="detailssetion">
+        
+        <div class="leftdiv">  
+             <!-- RigtDiv -->
+            <div class="txtdiv">
+                    <span>MAA</span> 
+                    <span class="material-icons">arrow_forward</span>
+                    <span>DEL</span>
+                    <pre>   </pre>  
+                    <b><span>Reviw your trip</span></b>
+            </div>
+            <!-- check Covid -->
+            <div class="checkCovid">
+              
+                    <div class="crossIcon">
+                        <h1 class="material-icons"> report_problem</h1>
+                    </div>
+                    <div class="textcheck">
+                        <p>Check COVID-19 restrictions. </p>
+                        <a href="#"><span>find out more</span></a>
+                        <a href="#"><span>Dismiss</p></span></a>
+                    </div>
+
+            </div>
+              <!-- stay flaxible -->       
+              <section class="stayFlaxible">
+                    <div class="stayflaxibleclass">
+                        <div class="stayHomeimage">
+                            <img src="https://images.trvl-media.com/media/content/expus/graphics/flights/no_change_fee.svg">
+                        </div>
+                        <div class="stayHometext">
+                        <h3>Stay flexible with no change fess</h3>
+                        <p>We recommend boking a flight with no change fess in case your plans change.</p>
+                        <a href="#"><span>Chage flight</span></a>
+                        </div>
+                    </div>
+              </section> 
+               
+              <section class="plansection">
+                <!-- Sorce To Des -->
+                  <div class="sorceTodes">
+                    <h1>Chennnai To Delhi</h1>
+                    <div class="flitimg">
+                        <div class="fimage">
+                            <span class="material-icons">flight_takeoff</span><pre>    </pre>
+                        </div>
+                            <div class="fclass">
+                                <p></p>
+                            </div>
+                     </div>
+                     <!-- Time and -->
+                     <div class="flitTime">
+                        <h4><b></b></h4>
+                        <p></p>
+                        <a href="#">Show details</a>
+                        <br><br><br><br><br><br><br><br><br><br><br>
+                        <hr>
+                    </div>
+                      <!-- Estimated bag fess -->
+                     <br><br><br>
+                    <section class="Estimatedclass">
+                        <h3>Estimated bag fess</h3>
+                        <div class="Estimatedcost">
+                                <div class="leftest">
+                                    <p>Carry-On:</p>
+                                    <p>1st Checked bag:</p>
+                                    <p>2nd Checked bag:</p>
+                                </div>
+                                <div class="rightest">
+                                    <p>Included</p>
+                                    <p>Included</p>
+                                    <p>₹1000 to ₹4000</p>
+                                </div>
+                        </div>
+                       
+                        <div class="estimatetext">
+                            <span>
+                                Baggage fees reflect the airline's standard fees based on the selected fare class. 
+                                Fees may vary based on size and weight restrictions as well as loyalty programs
+                                 and other promotions. For more information, check with 
+                    
+                                    <span class="material-icons">
+                                        logout
+                                        </span>
+                             
+                            </span>
+                            <div class="estimatetext2">
+                                <span>
+                                   <span>you can purchase checked bags from Go First</span><span>icon</span><span>
+                                       or through the link in your confirmation or check-in emails.
+                                   </span>
+                                  
+                            
+                        </div>
+                     
+                    </section>
+                    <div class="lastDiv">
+                      <hr>
+                      <a href="#"><span>Chage flight</span></a>
+                      <center><span>Tell Us how  we can improve our site </span></center>
+                    </div>
+                   
+                  </div>
+
+              </section>
+              <hr>
+        </div>
+        <!-- RigtDiv -->
+        <div class="rightdiv">
+            <div class="checkout">
+              <h1>Price Summay</h1>
+              <label for="">Select no. of passengers</label>
+              <select name="" id="passengerNum" onchange="numOfPass()">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            
+
+            </div>
+            <hr>
+            <div class="checkout2">
+            <div class="button"> 
+              <p></p>
+              <table class="table2">
+                <tr>
+                  <td><h2>Trip Total</h2></td>
+                  <td></td>
+                  <td><h2 id="finalPrice">$ 82.24</h2></td>
+                </tr>
+              </table>
+              <p id="text">Rates are quoted in Indian rupees</p>
+           <a href="paymentpage.html"> <button id="checkoutBtn">check out</button></a>
+      
+            </div>
+            </div>
+        </div>
+     
+      </section>
+    
+  </body>
+</html>
+<script>
+  var count = 0;
+  function dropMenu() {
+    if (count == 0) {
+      document.getElementById("dropMenu").style.visibility = "visible";
+      count = 1;
+    } else if (count == 1) {
+      document.getElementById("dropMenu").style.visibility = "hidden";
+      count = 0;
+    }
+  }
+ var finalFlight = JSON.parse(localStorage.getItem("finalFlight"));
+
+ console.log(finalFlight);
+  document.querySelector(".txtdiv>span:first-child").textContent =  finalFlight.cityFrom;
+  document.querySelector(".txtdiv>span:nth-child(3)").textContent =  finalFlight.cityTo;
+  document.querySelector(".sorceTodes>h1:first-child").textContent =  finalFlight.cityFrom+" to "+finalFlight.cityTo;
+  document.querySelector(".fclass>p").textContent =  finalFlight.date;
+  document.querySelector(".flitTime>h4>b").textContent =  finalFlight.fTime;
+  document.querySelector(".flitTime>p").textContent =  finalFlight.dur+" Hours";
+  
+  document.querySelector(".button>p:first-child").textContent =  "₹"+finalFlight.fPrice+" x 1 Passenger";
+  document.querySelector("#finalPrice").textContent =  "₹"+finalFlight.fPrice;
+  localStorage.setItem('finalPrice',JSON.stringify(+finalFlight.fPrice));
+
+  function numOfPass(){
+   var selected = document.querySelector("#passengerNum").value;
+   document.querySelector(".button>p:first-child").textContent =  "₹"+finalFlight.fPrice+" x "+selected+ " Passenger";
+   var finalPrice = finalFlight.fPrice*selected;
+   localStorage.setItem('finalPrice',JSON.stringify(finalPrice));
+   document.querySelector("#finalPrice").textContent =  "₹"+finalFlight.fPrice*selected;
+  }
+  
+
+</script>
