@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
     <link rel="stylesheet" href="otpPage.css">
+    <link
+      type="image/x-icon"
+      href="https://www.travelocity.com/favicon.ico"
+      sizes="16x16 32x32"
+      rel="shortcut icon"
+    /> 
+    <title>
+        Payments OTP | Travelocity
+      </title>
 </head>
 <body>
   <form id="otpForm">
    <div class="div2">
-       <img src="https://www.travelocity.com/_dms/interstitial/logo.svg?locale=en_US&siteid=80001"></img>
-       <p class="otpPara">Go back to your booking</p>
+       <a href="index.html"><img src="https://www.travelocity.com/_dms/interstitial/logo.svg?locale=en_US&siteid=80001"></img></a>
+       <a href="checkout.html"><p class="otpPara">Go back to your booking</p></a>
+       
    </div>
    <hr>
    <div class="div2">
        <label id="otpLabel">Enter 4 digit OTP</label></div></br>
-       <input type="number" class="otpPara" id="otp" required></p>
+       <input type="number" class="otpPara" id="otp" min="1000" max="9999" required></p>
        <input type="submit">
        <div>
        </form> 

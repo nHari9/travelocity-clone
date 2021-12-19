@@ -4,7 +4,8 @@
 }
  .otpPara{
     width:400px;
-    background:yellow;
+    background:  #0a438b;
+    color: white;
     height:40px;
     margin:auto;
     border-radius:10px;
@@ -27,5 +28,7 @@ input[type="number"]{
 #otpLabel{
     margin-top:10px;
     font-size:1.3em;
-
+}
+a{
+    text-decoration: none;
 }
