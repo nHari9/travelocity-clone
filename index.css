@@ -303,11 +303,12 @@ h1 {
   border: 5px solid #0a438b;
 }
 #searchPanel select {
-  width: 20%;
+  width: 30%;
   margin: 10px auto;
   padding: 5px;
   border: 1px solid grey;
-  border-radius: 20px;
+  border-radius: 10px;
+  font-size: 25px;
 }
 #searchPanel button {
   border-radius: 20px;

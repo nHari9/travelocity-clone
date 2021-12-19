@@ -145,5 +145,9 @@ function flightPage(event){
   window.location.href = "flight-booking.html";
 }
 
+document.querySelector("#support").addEventListener("click",goToSupport);
+function goToSupport(event){
+  window.location.href = "support.html";
+}
 
 
