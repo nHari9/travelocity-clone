@@ -1,0 +1,25 @@
+#supportDiv{
+/* margin:auto; */
+text-align: center;
+}
+
+#supportForm>input{
+    margin-bottom:20px;
+    height:40px;
+    width:300px;
+    border:1px solid black;
+   padding-left:10px;
+    font-size: 1.2em;
+    border-radius:10px;
+
+}
+#query{
+    margin-bottom:20px;
+    border:1px solid black;
+    font-size: 1.3em;
+    border-radius:10px;
+}
+input[type="submit"]{
+    background:orange;
+    color:white;
+}
