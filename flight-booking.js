@@ -51,6 +51,7 @@ function displayFlights(selectedFlights) {
     price.setAttribute("class", "fPrice");
     price.textContent = "₹" + el.fPrice;
     rightDiv.append(price);
+    document.querySelector("title").innerHTML = el.cityFrom + " to " + el.cityTo+" | Flights";
   });
 }
 
