@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    
     <link rel="stylesheet" href="support.css">
+    <link
+      type="image/x-icon"
+      href="https://www.travelocity.com/favicon.ico"
+      sizes="16x16 32x32"
+      rel="shortcut icon"
+    /> 
+    <title>
+      Support | Travelocity
+    </title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
 </head>
 <body>
+    <header>
+        <nav>
+          <div id="leftNav">
+            <a href="index.html">
+              <img
+              src="https://www.travelocity.com/_dms/header/logo.svg?locale=en_US&amp;siteid=80001&amp;2"
+              alt="travelocity"
+            />
+            </a>
+            
+            <div id="dropDown">
+              <button onclick="dropMenu()"><p>More Travel</p></button>
+              <div id="dropMenu">
+                <div class="anchor"><a href="">Packages</a></div>
+                <div class="anchor"><a href="">Stays</a></div>
+                <div class="anchor"><a href="">Cars</a></div>
+                <div class="anchor"><a href="">Flights</a></div>
+                <div class="anchor"><a href="">Cruises</a></div>
+                <div class="anchor"><a href="">Things to do</a></div>
+                <div class="anchor"><a href="">Tips for me</a></div>
+                <div class="anchor"><a href="">Discover</a></div>
+                <div class="anchor"><a href="">Travel Deals</a></div>
+              </div>
+            </div>
+            <div onclick="dropMenu()">
+              <span class="material-icons" style="color: white; margin-top: 20px"
+                >expand_more</span
+              >
+            </div>
+          </div>
+          <div id="rightNav">
+            <a href="#">Espanol</a>
+            <a href="#">List your property</a>
+            <a href="support.html">Support</a>
+            <a href="#">Trips</a>
+            <a href="signin.html" id="signinText">Sign in</a>
+          </div>
+        </nav>
+      </header>
     <div id="supportDiv">
+        <h1>Enter your query</h1>
     <form id="supportForm">
         <input type="text" id="name" placeholder="enter your name" required></br>
         <input type="text" id="phone" placeholder="enter your phone no." required></br>
@@ -14,6 +67,54 @@
         <input type="submit">
     </form>
     </div>
+    <hr>
+    <footer>
+        <div id="links">
+          <div>
+            <img src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg" alt="expedia group">
+          </div>
+          <div>
+            <ul>
+              <li><b>Company</b></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Advertising</a></li>
+              <li><a href="#">Newsroom</a></li>             
+            </ul>  
+          </div>
+  
+          <div>
+            <ul>
+              <li><b>Explore</b></li>
+              <li><a href="#">Domestic Flights</a></li>
+              <li><a href="#">Travelocity Reviews</a></li>
+              <li><a href="#">Travelocity Coupons</a></li>
+              <li><a href="#">Travel Blog</a></li>            
+            </ul> 
+          </div>
+          <div>
+            <ul>
+              <li><b>Policies</b></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Accessibility</a></li>     
+            </ul> 
+          </div>
+          <div>
+            <ul>
+              <li><b>Help</b></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Cancel your flight</a></li>
+              <li><a href="#">Use a Travelocity coupon</a></li>      
+            </ul> 
+          </div>
+        </div>
+        <hr>
+        <div>
+          <p>© 2021 Travelscape LLC, an Expedia Group Company. All rights reserved.
+            Travelocity, the Stars Design, and The Roaming Gnome Design are trademarks or registered trademarks of Travelscape LLC. CST# 2056372-50.</p>
+        </div>
+      </footer>
 </body>
 </html>
 <script src="support.js"></script>
