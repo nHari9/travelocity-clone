@@ -28,3 +28,6 @@ This is project under which we cloned the flight booking functionality of travel
 <p><a href="https://github.com/ashwanisahu97">Ashwani Sahu</a> made the OTP page and support page, the OTP page only accepts a four-digit number as input and alerts the user for successful payment. The support page contains an empty form to get the user's contact information, it then is stored in local storage, to be used by customer service to contact and resolve the user’s queries.</p>
 
 <p><a href="https://github.com/vivekkumar1994">Vivek Kumar</a> made the sign-in and the sign-up pages, the sign-in page can be accessed from the navigation bar. When filled with the right credentials sign-in page redirects to the landing page. Additional user credentials can be added to the sign-up page.</p>
+
+
+## Thank You 🙏
